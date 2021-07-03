@@ -1,0 +1,70 @@
+#products {
+  a {
+    text-decoration: none;
+  }
+
+  i {
+    color: $dark-blue;
+  }
+
+  .govuk-body {
+    color: $dark-blue;
+  }
+
+  #products .govuk-width-container {
+    margin: 0 auto;
+  }
+
+  .row-with-boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row-with-boxes > div {
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    transition: 0.3s all ease;
+  }
+
+  .classes,
+  .ics-codes,
+  .standards,
+  .other-products {
+    width: 100%;
+    text-align: center;
+    border: 2px solid $light-grey;
+    transition: 0.3s all ease;
+    box-shadow: $mid-grey 0px 5px 15px;
+
+    &:hover,
+    &active,
+    &:visited {
+      border: 2px solid $green;
+    }
+  }
+}
+
+@media screen and( max-width: 53em) {
+  #products {
+    .row-with-boxes > div {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and( max-width: 40em) {
+  #products {
+    .row-with-boxes > div {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and( max-width: 29.125em) {
+  #products {
+    .row-with-boxes > div {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+
+$red: #d0190f;
+$dark-grey: #626a6e;
+$mid-grey: #BFC1C3;
+$dark-blue: #003078;
+$light-grey: #dee0e2;
+$green: #00703c;
+$black: #0b0c0c;
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+}
+
+main {
+  min-height: 60vh;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: $green;
+}
+
+::selection {
+  color: white;
+  background: $green;
+}

@@ -1,0 +1,99 @@
+#my-profile {
+  .idsk-header__link {
+    color: $dark-blue;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    border: 1px solid #bfc1c3;
+    padding: 1rem;
+    min-height: 2.5rem;
+
+    &:hover,
+    &active,
+    &:visited {
+      border: 1px solid $green;
+    }
+  }
+
+  .my-profile-info {
+    display: none;
+    font-size: 1.1rem;
+    padding-left: 0;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#my-profile-orders,
+#standards_to_download,
+#standards_online {
+  .orders {
+    border: 1px solid $light-grey;
+    padding: 1rem;
+  }
+
+  h3 {
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .fa-download,
+  .paid {
+    color: $green;
+  }
+
+  .unpaid,
+  .fa-file-pdf,
+  .fa-times-circle {
+    color: $red;
+  }
+}
+
+#order-deteil {
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .orders {
+    border: 1px solid $light-grey;
+    padding: 1rem;
+    margin-bottom: 30px;
+
+    .govuk-table__cell {
+      width: 5rem;
+    }
+
+    .govuk-body-l {
+      margin-bottom: 0;
+    }
+  }
+
+  .govuk-body {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 32.8125em) {
+  #my-profile {
+    .my-profile-info {
+      display: block;
+    }
+
+    .govuk-table {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 464px) {
+  #order-deteil {
+    .govuk-table {
+      font-size: 80%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+#register {
+  margin-bottom: 30px;
+
+  .govuk-radios__item {
+    margin-bottom: 10px;
+  }
+
+  .register-container {
+    border: 1px solid $light-grey;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 1rem;
+  }
+
+  label,
+  .govuk-fieldset__legend {
+    font-weight: 600;
+  }
+
+  .govuk-hint {
+    font-size: 1rem;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .idsk-button--secondary {
+    margin-left: 1rem;
+  }
+}

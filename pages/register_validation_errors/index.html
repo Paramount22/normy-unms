@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--[if !IE 8]><!-->
+    <link
+      rel="stylesheet"
+      href="../../assets/css/idsk-frontend-2.6.0.min.css"
+    />
+    <!--<![endif]-->
+    <!--[if IE 8]>
+      <link
+        rel="stylesheet"
+        href="../../assets/css/idsk-frontend-ie8-2.6.0.min.css"
+      />
+    <![endif]-->
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <title>Normy UNMS - Portál noriem</title>
+  </head>
+  <body class="govuk-template__body js-enabled">
+    <header
+      id="header"
+      class="idsk-header-extended"
+      data-module="idsk-header-extended"
+    >
+      <div class="idsk-header-extended__container govuk-width-container">
+        <div
+          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
+        >
+          <a href="/" title="UNMS SR">
+            <div class="idsk-header-extended__logotype-crown">
+              <img
+                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                alt="UNMS SR"
+              />
+            </div>
+            <div class="idsk-header-extended__logotype-crown-mobile"></div>
+          </a>
+        </div>
+
+        <div class="idsk-header-extended__search">
+          <form class="idsk-header-extended__search-form">
+            <label
+              class="idsk-header-extended__search-label"
+              for="idsk-header-extended__search-input"
+            >
+              ISO 9001
+            </label>
+            <input
+              class="govuk-input govuk-!-display-inline-block"
+              id="idsk-header-extended__search-input"
+              name="search"
+              type="text"
+              aria-describedby="input-width-30-hint"
+              aria-label="Zadajte hľadaný výraz"
+            />
+            <button
+              type="submit"
+              class="govuk-button govuk-!-display-inline-block"
+              data-module="govuk-button"
+            >
+              <span class="govuk-visually-hidden">Vyhľadať</span>
+              <i aria-hidden="true" class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="idsk-header-extended__language">
+          <button type="button" class="idsk-header-extended__language-button">
+            <span class="idsk-header-extended__language--current-text">
+              <img
+                src="../../assets/images/flags/slovakia-flag-icon-16.png"
+                alt="slovenčina"
+                aria-hidden="true"
+              />
+              <span>slovenčina</span>
+            </span>
+          </button>
+          <ul class="idsk-header-extended__language-list">
+            <li class="idsk-header-extended__language-list-item">
+              <a
+                class="idsk-header-extended__language-list-link"
+                title="english"
+                href="#"
+              >
+                <img
+                  src="../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  alt="english"
+                  aria-hidden="true"
+                />
+                english
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="idsk-header-extended__language">
+          <div class="idsk--header__user-name">
+            <div class="auth-zone">
+              <a href="../login/index.html" class="idsk-header__link"
+                >Prihlásenie</a
+              >
+              |
+              <a href="../register/index.html" class="idsk-header__link"
+                >Registrácia</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
+          aria-controls="navigation"
+          aria-label="Show or hide Top Level Navigation"
+        >
+          Menu
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="5"
+              y1="19.8752"
+              x2="35"
+              y2="19.8752"
+              stroke="#003078"
+              stroke-width="3"
+            />
+            <line
+              x1="5"
+              y1="29.2507"
+              x2="30.5009"
+              y2="29.2507"
+              stroke="#003078"
+              stroke-width="3"
+            />
+            <line
+              x1="5.00177"
+              y1="10.5"
+              x2="30.5027"
+              y2="10.5"
+              stroke="#003078"
+              stroke-width="3"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="idsk-header-extended__content">
+          <nav>
+            <ul
+              class="idsk-header-extended__navigation"
+              aria-label="Top Level Navigation"
+            >
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="../../index.html"
+                  title="Portál noriem"
+                >
+                  Portál noriem
+                </a>
+              </li>
+
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="#3"
+                  title="STN-online"
+                >
+                  STN-online
+                </a>
+              </li>
+
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="#3"
+                  title="Môj Profil"
+                >
+                  Môj Profil
+                </a>
+              </li>
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link cart"
+                  href="../empty-cart/index.html"
+                  title="Košík"
+                >
+                  Košík<i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="idsk-header-extended__mobile">
+          <div class="auth-user-mobile-version">
+            <div class="auth-zone-mobile-version">
+              <a href="#" class="idsk-header__link">Prihlásenie</a> |
+              <a href="#" class="idsk-header__link">Registrácia</a>
+            </div>
+          </div>
+
+          <div class="idsk-header-extended__search">
+            <form class="idsk-header-extended__search-form">
+              <label
+                class="idsk-header-extended__search-label"
+                for="idsk-header-extended__search-input-mobile"
+              >
+                ISO 9001
+              </label>
+              <input
+                class="govuk-input govuk-!-display-inline-block"
+                id="idsk-header-extended__search-input-mobile"
+                name="search"
+                type="text"
+                aria-describedby="input-width-30-hint"
+                aria-label="ISO 9001"
+              />
+              <button
+                type="submit"
+                class="govuk-button govuk-!-display-inline-block"
+                data-module="govuk-button"
+              >
+                <span class="govuk-visually-hidden">Vyhľadať</span>
+                <i aria-hidden="true" class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="idsk-header-extended__content">
+            <nav>
+              <ul
+                class="idsk-header-extended__navigation"
+                aria-label="Top Level Navigation"
+              >
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="index.html"
+                    title="Portál noriem"
+                  >
+                    Portál noriem
+                  </a>
+                </li>
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="#2"
+                    title="STN-online"
+                  >
+                    STN-online
+                  </a>
+                </li>
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="#3"
+                    title="Môj Profil"
+                  >
+                    Môj Profil
+                  </a>
+                </li>
+
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link cart"
+                    href="../empty-cart/index.html"
+                    title="Košík"
+                  >
+                    Košík<i class="fas fa-shopping-cart"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <hr class="idsk-header-extended__hr" />
+
+          <div class="idsk-header-extended__language">
+            <button type="button" class="idsk-header-extended__language-button">
+              <span class="idsk-header-extended__language--current-text">
+                <img
+                  src="../../assets/images/flags/slovakia-flag-icon-16.png"
+                  alt="slovenčina"
+                  aria-hidden="true"
+                />
+                <span>slovenčina</span>
+              </span>
+            </button>
+            <ul class="idsk-header-extended__language-list">
+              <li class="idsk-header-extended__language-list-item">
+                <a
+                  class="idsk-header-extended__language-list-link"
+                  title="english"
+                  href="#"
+                >
+                  <img
+                    src="../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                    alt="english"
+                    aria-hidden="true"
+                  />
+                  english
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="idsk-header-extended__mobile-close">
+            <span class="govuk-visually-hidden"> Zavrieť menu </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="idsk-header-extended-ie-fix"></div>
+    <div class="idsk-header-extended-notification"></div>
+
+    <main class="govuk-width-container">
+      <div id="register">
+        <h2
+          class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-6"
+        >
+          Registrácia
+        </h2>
+
+        <p class="govuk-body govuk-!-width-one-half">
+          Pre vytvorenie nového účtu vyplňte nasledujúci formulár.
+        </p>
+
+        <div
+          class="govuk-error-summary optional-extra-class"
+          aria-labelledby="error-summary-title"
+          role="alert"
+          tabindex="-1"
+          data-module="govuk-error-summary"
+        >
+          <h2 class="govuk-error-summary__title" id="error-summary-title">
+            Nesprávne vyplnený regisračný formulár.
+          </h2>
+          <div class="govuk-error-summary__body">
+            <p>Skontrolujte si prosím Vaše údaje.</p>
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#customer-type">Zadajte prosím typ zákazníka.</a>
+              </li>
+              <li>
+                <a href="#email">Kolónka Email nie je správne vyplnená.</a>
+              </li>
+              <li>
+                <a href="#password">Heslo musí obsahovať najmenej 8 znakov.</a>
+              </li>
+              <li>
+                <a href="#password-confirm">Heslo sa nezhoduje.</a>
+              </li>
+              <li>
+                <a href="#firstName">Kolónka Meno nie je správne vyplnená .</a>
+              </li>
+              <li>
+                <a href="#lastName"
+                  >Kolónka Priezvisko nie je správne vyplnená.</a
+                >
+              </li>
+              <li>
+                <a href="#organization"
+                  >Kolónka Názov organizácie nie je správne vyplnená.</a
+                >
+              </li>
+              <li>
+                <a href="#industry">Zadajte odvevie.</a>
+              </li>
+              <li>
+                <a href="#industry">Zadajte právnu formu.</a>
+              </li>
+              <li>
+                <a href="#street">Kolónka Ulica nie je správne vyplnená.</a>
+              </li>
+              <li>
+                <a href="#city">Kolónka Mesto nie je správne vyplnená.</a>
+              </li>
+              <li>
+                <a href="#psc">Kolónka PSČ nie je správne vyplnená.</a>
+              </li>
+              <li>
+                <a href="#country">Zadajte štát.</a>
+              </li>
+              <li>
+                <a href="#terms"
+                  >Pre dokončenie registrácie je potrebné potvrdiť súhlas s
+                  obchodnými podmienkami.</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="govuk-!-margin-top-6" action="" method="POST">
+          <div class="register-container">
+            <h3
+              class="govuk-heading-m govuk-!-margin-bottom-4 govuk-!-margin-top-1"
+            >
+              Typ zákazníka
+            </h3>
+
+            <div
+              class="govuk-form-group govuk-form-group--error"
+              id="customer-type"
+            >
+              <fieldset
+                class="govuk-fieldset"
+                aria-describedby="customer-type-error"
+              >
+                <span id="customer-type-error" class="govuk-error-message">
+                  Zadajte typ zákazníka
+                </span>
+
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input
+                      class="govuk-radios__input"
+                      id="person"
+                      name="type"
+                      type="radio"
+                      value="person"
+                    />
+                    <label class="govuk-label govuk-radios__label" for="person">
+                      Súkromná osoba</label
+                    >
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input
+                      class="govuk-radios__input"
+                      id="legal"
+                      name="type"
+                      type="radio"
+                      value=""
+                    />
+                    <label class="govuk-label govuk-radios__label" for="legal">
+                      Právnická/Fyzická podnikateľ</label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="register-container">
+            <h3
+              class="govuk-heading-m govuk-!-margin-bottom-4 govuk-!-margin-top-1"
+            >
+              Prístupové údaje
+            </h3>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="email"> Email </label>
+
+                  <span id="email-error" class="govuk-error-message">
+                    <span class="">Zadajte emailovú adresu</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="email"
+                    name="email"
+                    type="text"
+                    aria-describedby="email-error"
+                  />
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="password"> Heslo </label>
+
+                  <span id="password-error" class="govuk-error-message">
+                    <span class="">Heslo musí obsahovať najmenej 8 znakov</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="password"
+                    name="password"
+                    type="password"
+                    aria-describedby="password-error"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="password-confirm">
+                    Overenie hesla
+                  </label>
+
+                  <span id="password-confirm-error" class="govuk-error-message">
+                    <span class="">Heslo sa nezhoduje</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="password-confirm"
+                    name="password"
+                    type="password"
+                    aria-describedby="password-confirm-error"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-container">
+            <h3
+              class="govuk-heading-m govuk-!-margin-bottom-4 govuk-!-margin-top-1"
+            >
+              Osobné údaje
+            </h3>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="degree-before-name">
+                    Titul pred menom
+                  </label>
+                  <span class="govuk-hint">Nepovinný údaj</span>
+
+                  <input
+                    class="govuk-input govuk-!-width-one-third"
+                    id="degree-before-name"
+                    name="degree-before-name"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="firstName"> Meno </label>
+                  <span id="firstName-error" class="govuk-error-message">
+                    <span class="">Zadajte meno</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    aria-describedby="firstName-error"
+                  />
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="lastName"> Priezvisko </label>
+                  <span id="lastName-error" class="govuk-error-message">
+                    <span class="">Zadajte priezvisko</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    aria-describedby="lastName-error"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="firstName">
+                    Titul za menom
+                  </label>
+                  <span class="govuk-hint">Nepovinný údaj</span>
+
+                  <input
+                    class="govuk-input govuk-!-width-one-third"
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-container company-details">
+            <h3
+              class="govuk-heading-m govuk-!-margin-bottom-4 govuk-!-margin-top-1"
+            >
+              Údaje o spoločnosti
+            </h3>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="organization">
+                    Názov organizácie
+                  </label>
+                  <span id="organization-error" class="govuk-error-message">
+                    <span class="">Zadajte názov organizácie</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="organization"
+                    name="organization"
+                    type="text"
+                    aria-describedby="organization-error"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="ico"> IČO </label>
+                  <span class="govuk-hint">Nepovinný údaj</span>
+
+                  <input class="govuk-input" id="ico" name="ico" type="text" />
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="ico">
+                    IČ DPH / VAT Number
+                  </label>
+                  <span class="govuk-hint">Nepovinný údaj</span>
+
+                  <input class="govuk-input" id="vat" name="vat" type="text" />
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="industry">Odvetvie</label>
+                  <span id="industry-error" class="govuk-error-message">
+                    <span class="">Zadajte odvetvie </span>
+                  </span>
+                  <select
+                    class="govuk-select govuk-select--error"
+                    id="industry"
+                    name="industry"
+                    aria-describedby="industry-error"
+                  >
+                    <option value=""></option>
+                    <option value="Slovensko">Administratíva</option>
+                    <option value="Cesko">Automobilový priemysel</option>
+                    <option value="Polsko">Stavebnícvo a reality</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="legal-form"
+                    >Právna forma</label
+                  >
+                  <span id="legal-form-error" class="govuk-error-message">
+                    <span class="">Zadajte právnu formu </span>
+                  </span>
+                  <select
+                    class="govuk-select govuk-select--error"
+                    id="legal-form"
+                    name="country"
+                    aria-describedby="legal-form-error"
+                  >
+                    <option value=""></option>
+                    <option value="Slovensko">akciová spoločnosť</option>
+                    <option value="Cesko">
+                      spoločnosť s ručením obmedzeným
+                    </option>
+                    <option value="Polsko">iné</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="register-container">
+            <h3
+              class="govuk-heading-m govuk-!-margin-bottom-4 govuk-!-margin-top-1"
+            >
+              Adresa pre poštový styk
+            </h3>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="street"> Ulica </label>
+                  <span id="street-error" class="govuk-error-message">
+                    <span class="">Zadajte ulicu</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="street"
+                    name="street"
+                    type="text"
+                    aria-describedby="street-error"
+                  />
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="city"> Mesto </label>
+                  <span id="city-error" class="govuk-error-message">
+                    <span class="">Zadajte mesto</span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error"
+                    id="city"
+                    name="city"
+                    type="text"
+                    aria-describedby="city-error"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="psc"> PSČ </label>
+                  <span id="psc-error" class="govuk-error-message">
+                    <span class="">Zadajte PSČ </span>
+                  </span>
+                  <input
+                    class="govuk-input govuk-input--error govuk-!-width-one-third"
+                    id="psc"
+                    name="psc"
+                    type="text"
+                    aria-describedby="psc-error"
+                  />
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group govuk-form-group--error">
+                  <label class="govuk-label" for="country">Štát</label>
+                  <span id="country-error" class="govuk-error-message">
+                    <span class="">Zadajte štát </span>
+                  </span>
+                  <select
+                    class="govuk-select govuk-select--error"
+                    id="country"
+                    name="country"
+                    aria-describedby="country-error"
+                  >
+                    <option value=""></option>
+                    <option value="Slovensko">Slovensko</option>
+                    <option value="Cesko">Česká republika</option>
+                    <option value="Polsko">Poľsko</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-container">
+            <h3
+              class="govuk-heading-m govuk-!-margin-bottom-4 govuk-!-margin-top-1"
+            >
+              Ostatné údaje
+            </h3>
+            <div class="govuk-form-group govuk-form-group--error">
+              <span id="terms-error" class="govuk-error-message">
+                <span class=""
+                  >Pre dokončenie registrácie je potrebné potvrdiť súhlas s
+                  obchodnými podmienkami.
+                </span>
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input
+                    type="checkbox"
+                    class="govuk-checkboxes__input"
+                    id="terms"
+                    name="terms"
+                    aria-describedby="terms-error"
+                  />
+                  <label class="govuk-label govuk-checkboxes__label" for="terms"
+                    >Prehlasujem, že som sa oboznámil s obchodnými podmienkami a
+                    zásadami spracúvania osobných údajov.
+                    <span>
+                      <a
+                        class="idsk-footer__link"
+                        target="_blank"
+                        href="../../assets/documents/podnienky_prevadzkovatela.pdf"
+                        >Obchodné podmienky a zásady spracúvania osobných
+                        údajov</a
+                      >
+                    </span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            role="button"
+            draggable="false"
+            class="idsk-button idsk-button--start idsk-registration-for-event-js-submit"
+            data-module="idsk-button"
+          >
+            Registrovať
+            <svg
+              class="idsk-button__start-icon"
+              width="17.5"
+              height="19"
+              viewBox="0 0 15 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.4016 10L0 0H5.59826L15 10H9.4016Z"
+                fill="white"
+              ></path>
+              <path
+                opacity="0.5"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.5984 20L15 10H9.40174L0 20H5.5984Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </form>
+
+        <h3 class="govuk-heading-m idsk-registration-for-event__thank-you-msg">
+          Ďakujeme za registráciu do portálu noriem.
+        </h3>
+      </div>
+    </main>
+
+    <footer class="idsk-footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="idsk-footer__meta">
+          <div class="idsk-footer__meta-item">
+            <a href="https://www.unms.sk/" target="_blank">
+              <img
+                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                alt="UNMS SR"
+                width="220"
+              />
+            </a>
+          </div>
+          <div class="idsk-footer__meta-item idsk-footer__meta-item--grow">
+            <span class="idsk-footer__licence-description">
+              Úrad pre normalizáciu, metrológiu a skúšobníctvo Slovenskej
+              republiky.
+            </span>
+            <h2 class="govuk-visually-hidden">Items</h2>
+            <ul class="idsk-footer__inline-list">
+              <li class="idsk-footer__inline-list-item">
+                <a class="idsk-footer__link" href="../help/index.html">
+                  Pomoc
+                </a>
+              </li>
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  target="_blank"
+                  class="idsk-footer__link"
+                  href="./assets/documents/Technicka_podpora.pdf"
+                >
+                  Technická podpora
+                </a>
+              </li>
+              <li class="idsk-footer__inline-list-item">
+                <a class="idsk-footer__link" href="#3"> Kontakty </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+    </script>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--[if !IE 8]><!-->
+    <link
+      rel="stylesheet"
+      href="../../../assets/css/idsk-frontend-2.6.0.min.css"
+    />
+    <!--<![endif]-->
+    <!--[if IE 8]>
+      <link
+        rel="stylesheet"
+        href="./assets/css/idsk-frontend-ie8-2.6.0.min.css"
+      />
+    <![endif]-->
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <title>Normy UNMS - Portál noriem</title>
+  </head>
+  <body class="govuk-template__body js-enabled">
+    <header
+      id="header"
+      class="idsk-header-extended"
+      data-module="idsk-header-extended"
+    >
+      <div class="idsk-header-extended__container govuk-width-container">
+        <div
+          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
+        >
+          <a href="/" title="UNMS SR">
+            <div class="idsk-header-extended__logotype-crown">
+              <img
+                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                alt="UNMS SR"
+              />
+            </div>
+            <div class="idsk-header-extended__logotype-crown-mobile"></div>
+          </a>
+        </div>
+
+        <div class="idsk-header-extended__search">
+          <form class="idsk-header-extended__search-form">
+            <label
+              class="idsk-header-extended__search-label"
+              for="idsk-header-extended__search-input"
+            >
+              ISO 9001
+            </label>
+            <input
+              class="govuk-input govuk-!-display-inline-block"
+              id="idsk-header-extended__search-input"
+              name="search"
+              type="text"
+              aria-describedby="input-width-30-hint"
+              aria-label="Zadajte hľadaný výraz"
+            />
+            <button
+              type="submit"
+              class="govuk-button govuk-!-display-inline-block"
+              data-module="govuk-button"
+            >
+              <span class="govuk-visually-hidden">Vyhľadať</span>
+              <i aria-hidden="true" class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="idsk-header-extended__language">
+          <button type="button" class="idsk-header-extended__language-button">
+            <span class="idsk-header-extended__language--current-text">
+              <img
+                src="../../../assets/images/flags/slovakia-flag-icon-16.png"
+                alt="slovenčina"
+                aria-hidden="true"
+              />
+              <span>slovenčina</span>
+            </span>
+          </button>
+
+          <ul class="idsk-header-extended__language-list">
+            <li class="idsk-header-extended__language-list-item">
+              <a
+                class="idsk-header-extended__language-list-link"
+                title="english"
+                href="#"
+              >
+                <img
+                  src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  alt="english"
+                  aria-hidden="true"
+                />
+                english
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="idsk-header-extended__language">
+          <ul class="auth-user-desktop-version">
+            <li>
+              <a href="../index.html"
+                ><i class="fas fa-user" title="Prilásený užívateľ"></i> Môj
+                Profil
+              </a>
+            </li>
+            <li>marekjurica@normoff.gov.sk</li>
+            <li>
+              <a href="./pages/header_logout/index.html"
+                ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
+                sa</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
+          aria-controls="navigation"
+          aria-label="Show or hide Top Level Navigation"
+        >
+          Menu
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="5"
+              y1="19.8752"
+              x2="35"
+              y2="19.8752"
+              stroke="#003078"
+              stroke-width="3"
+            />
+            <line
+              x1="5"
+              y1="29.2507"
+              x2="30.5009"
+              y2="29.2507"
+              stroke="#003078"
+              stroke-width="3"
+            />
+            <line
+              x1="5.00177"
+              y1="10.5"
+              x2="30.5027"
+              y2="10.5"
+              stroke="#003078"
+              stroke-width="3"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="idsk-header-extended__content">
+          <nav>
+            <ul
+              class="idsk-header-extended__navigation"
+              aria-label="Top Level Navigation"
+            >
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="../../index.html"
+                  title="Portál noriem"
+                >
+                  Portál noriem
+                </a>
+              </li>
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="./pages/stn-online/index.html"
+                  title="STN-online"
+                >
+                  STN-online
+                </a>
+              </li>
+
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link cart"
+                  href="#4"
+                  title="Košík"
+                >
+                  Košík<i class="fas fa-shopping-cart"></i>
+                  <span class="cart-item">4</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="idsk-header-extended__mobile">
+          <ul class="auth-user-mobile-version">
+            <li>
+              <a class="my-profile-link" href=""
+                ><i class="fas fa-user" title="Prilásený užívateľ"></i>Môj
+                Profil</a
+              >
+            </li>
+            <li>marek.jurica@normoff.gov.sk</li>
+            <li>
+              <a href=""
+                ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
+                sa</a
+              >
+            </li>
+          </ul>
+
+          <div class="idsk-header-extended__search">
+            <form class="idsk-header-extended__search-form">
+              <label
+                class="idsk-header-extended__search-label"
+                for="idsk-header-extended__search-input-mobile"
+              >
+                ISO 9001
+              </label>
+              <input
+                class="govuk-input govuk-!-display-inline-block"
+                id="idsk-header-extended__search-input-mobile"
+                name="search"
+                type="text"
+                aria-describedby="input-width-30-hint"
+                aria-label="ISO 9001"
+              />
+              <button
+                type="submit"
+                class="govuk-button govuk-!-display-inline-block"
+                data-module="govuk-button"
+              >
+                <span class="govuk-visually-hidden">Vyhľadať</span>
+                <i aria-hidden="true" class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="idsk-header-extended__content">
+            <nav>
+              <ul
+                class="idsk-header-extended__navigation"
+                aria-label="Top Level Navigation"
+              >
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="index.html"
+                    title="Portál noriem"
+                  >
+                    Portál noriem
+                  </a>
+                </li>
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="#2"
+                    title="STN-online"
+                  >
+                    STN-online
+                  </a>
+                </li>
+
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link cart"
+                    href="#4"
+                    title="Košík"
+                  >
+                    Košík<i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item">4</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <hr class="idsk-header-extended__hr" />
+
+          <div class="idsk-header-extended__language">
+            <button type="button" class="idsk-header-extended__language-button">
+              <span class="idsk-header-extended__language--current-text">
+                <img
+                  src="../../../assets/images/flags/slovakia-flag-icon-16.png"
+                  alt="slovenčina"
+                  aria-hidden="true"
+                />
+                <span>slovenčina</span>
+              </span>
+            </button>
+            <ul class="idsk-header-extended__language-list">
+              <li class="idsk-header-extended__language-list-item">
+                <a
+                  class="idsk-header-extended__language-list-link"
+                  title="english"
+                  href="#"
+                >
+                  <img
+                    src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                    alt="english"
+                    aria-hidden="true"
+                  />
+                  english
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="idsk-header-extended__mobile-close">
+            <span class="govuk-visually-hidden"> Zavrieť menu </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="idsk-header-extended-ie-fix"></div>
+
+    <div class="idsk-header-extended-notification"></div>
+
+    <main class="govuk-width-container">
+      <div class="govuk-grid-column-full">
+        <div>
+          <h2
+            class="govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-6"
+          >
+            Vaše údaje boli úspešne zmenené.
+          </h2>
+        </div>
+        <a
+          href="../../../index.html"
+          role="button"
+          draggable="false"
+          class="idsk-button idsk-button--start idsk-registration-for-event-js-submit"
+          data-module="idsk-button"
+        >
+          Pokračovať
+          <svg
+            class="idsk-button__start-icon"
+            width="17.5"
+            height="19"
+            viewBox="0 0 15 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.4016 10L0 0H5.59826L15 10H9.4016Z"
+              fill="white"
+            ></path>
+            <path
+              opacity="0.5"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.5984 20L15 10H9.40174L0 20H5.5984Z"
+              fill="white"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </main>
+
+    <footer class="idsk-footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="idsk-footer__meta">
+          <div class="idsk-footer__meta-item">
+            <a href="https://www.unms.sk/" target="_blank">
+              <img
+                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                alt="UNMS SR"
+                width="220"
+              />
+            </a>
+          </div>
+          <div class="idsk-footer__meta-item idsk-footer__meta-item--grow">
+            <span class="idsk-footer__licence-description">
+              Úrad pre normalizáciu, metrológiu a skúšobníctvo Slovenskej
+              republiky.
+            </span>
+            <h2 class="govuk-visually-hidden">Items</h2>
+            <ul class="idsk-footer__inline-list">
+              <li class="idsk-footer__inline-list-item">
+                <a class="idsk-footer__link" href="./pages/help/index.html">
+                  Pomoc
+                </a>
+              </li>
+
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  target="_blank"
+                  class="idsk-footer__link"
+                  href="./assets/documents/Technicka_podpora.pdf"
+                >
+                  Technická podpora
+                </a>
+              </li>
+              <li class="idsk-footer__inline-list-item">
+                <a class="idsk-footer__link" href="./pages/contacts/index.html">
+                  Kontakty
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+    </script>
+    <script src="../../../assets/js/app.js"></script>
+  </body>
+</html>

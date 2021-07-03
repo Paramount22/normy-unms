@@ -1,0 +1,136 @@
+#header {
+  .idsk--header__user-logout {
+    color: $dark-blue;
+    font-size: 0.9rem;
+  }
+
+  .idsk-header__link {
+    color: $dark-blue;
+  }
+
+  .idsk-header-extended__content {
+    margin-top: 1rem;
+  }
+
+  .idsk--header__user-name {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .idsk-header-extended__mobile {
+    .cart {
+      padding: 0;
+    }
+  }
+
+  .logout {
+    margin-top: 0.1rem;
+  }
+
+  .auth-zone {
+    color: $dark-blue;
+    font-weight: 600;
+  }
+
+  .my-profile-desktop-version {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .cart {
+    background: $dark-blue;
+    padding: 0.5rem;
+    color: white;
+  }
+
+  .fa-shopping-cart {
+    margin-left: 0.2rem;
+  }
+
+  .cart-item {
+    color: white;
+    margin-left: 0.2rem;
+    /*display: none;*/
+  }
+
+  .shopping-cart {
+    color: white;
+    background: $dark-blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .user-status {
+    font-size: small;
+    margin-top: 0.2rem;
+  }
+
+  .auth-user-desktop-version {
+    padding-left: 0;
+    font-size: 0.9rem;
+    margin: 0;
+    color: $dark-blue;
+    a {
+      color: $dark-blue;
+    }
+
+    a:last-child {
+      text-decoration: underline;
+    }
+
+    a:first-child {
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  .auth-user-mobile-version {
+    a {
+      color: white;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+    .my-profile-link {
+      color: white;
+      text-decoration: none;
+      padding-bottom: 5px;
+      margin-left: 5px;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+
+      .idsk--header__user-logout {
+        font-size: 1rem;
+      }
+    }
+
+    float: left;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding-left: 0;
+  }
+
+  .auth-zone {
+    a {
+      color: $dark-blue;
+    }
+  }
+}

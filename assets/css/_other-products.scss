@@ -1,0 +1,38 @@
+#other-products {
+  .products {
+    border: 1px solid $light-grey;
+    padding: 1rem;
+    margin-bottom: 30px;
+
+    h3 {
+      border-bottom: 1px solid $light-grey;
+      padding-bottom: 1rem;
+    }
+
+    .govuk-body-s {
+      font-style: italic;
+    }
+
+    ul {
+      padding-left: 0;
+      margin: 0.3rem 0 0 0;
+      display: flex;
+      li {
+        padding-right: 1rem;
+      }
+    }
+
+    .govuk-body {
+      img {
+        float: left;
+        padding-right: 0.5rem;
+      }
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+#advanced-standard-search {
+  .search-container {
+    border: 1px solid $light-grey;
+    padding: 15px;
+    margin-bottom: 30px;
+
+    .govuk-grid-column-full {
+      padding: 0;
+    }
+
+    .select {
+      margin-right: 15px;
+      width: 25%;
+    }
+
+    .select-others {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 1rem;
+  }
+
+  .govuk-checkboxes {
+    display: flex;
+  }
+
+  i {
+    vertical-align: middle;
+  }
+
+  .fa-file-pdf {
+    margin-left: 0.3rem;
+    font-size: 2rem;
+    vertical-align: middle;
+    color: $red;
+  }
+
+  .fa-question-circle {
+    vertical-align: top;
+    color: $black;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #advanced-standard-search {
+    .fa-question-circle {
+      margin-top: 1rem;
+      position: relative;
+      left: -1rem;
+    }
+  }
+}
+@media screen and (max-width: 31.875em) {
+  #advanced-standard-search {
+    .search-container {
+      .select {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+    }
+  }
+}

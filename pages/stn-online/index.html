@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--[if !IE 8]><!-->
+    <link rel="stylesheet" href="../../assets/css/idsk-frontend-2.6.0.min.css" />
+    <!--<![endif]-->
+    <!--[if IE 8]>
+      <link
+        rel="stylesheet"
+        href="./assets/css/idsk-frontend-ie8-2.6.0.min.css"
+      />
+    <![endif]-->
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <title>Normy UNMS - Portál noriem / STN-online</title>
+  </head>
+  <body class="govuk-template__body js-enabled">
+    <header
+      id="header"
+      class="idsk-header-extended"
+      data-module="idsk-header-extended"
+    >
+      <div class="idsk-header-extended__container govuk-width-container">
+        <div
+          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
+        >
+          <a href="/" title="UNMS SR">
+            <div class="idsk-header-extended__logotype-crown">
+              <img
+                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                alt="UNMS SR"
+              />
+            </div>
+            <div class="idsk-header-extended__logotype-crown-mobile"></div>
+          </a>
+        </div>
+
+        <div class="idsk-header-extended__search">
+          <form class="idsk-header-extended__search-form">
+            <label
+              class="idsk-header-extended__search-label"
+              for="idsk-header-extended__search-input"
+            >
+              ISO 9001
+            </label>
+            <input
+              class="govuk-input govuk-!-display-inline-block"
+              id="idsk-header-extended__search-input"
+              name="search"
+              type="text"
+              aria-describedby="input-width-30-hint"
+              aria-label="Zadajte hľadaný výraz"
+            />
+            <button
+              type="submit"
+              class="govuk-button govuk-!-display-inline-block"
+              data-module="govuk-button"
+            >
+              <span class="govuk-visually-hidden">Vyhľadať</span>
+              <i aria-hidden="true" class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="idsk-header-extended__language">
+          <button type="button" class="idsk-header-extended__language-button">
+            <span class="idsk-header-extended__language--current-text">
+              <img
+                src="../../assets/images/flags/slovakia-flag-icon-16.png"
+                alt="slovenčina"
+                aria-hidden="true"
+              />
+              <span>slovenčina</span>
+            </span>
+          </button>
+
+          <ul class="idsk-header-extended__language-list">
+            <li class="idsk-header-extended__language-list-item">
+              <a
+                class="idsk-header-extended__language-list-link"
+                title="english"
+                href="#"
+              >
+                <img
+                  src="../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  alt="english"
+                  aria-hidden="true"
+                />
+                english
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="idsk-header-extended__language">
+          <ul class="auth-user-desktop-version">
+            <li>
+              <a href=""
+                ><i class="fas fa-user" title="Prilásený užívateľ"></i> Môj
+                Profil
+              </a>
+            </li>
+            <li>marekjurica@normoff.gov.sk</li>
+            <li>
+              <a href="./pages/header_logout/index.html"
+                ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
+                sa</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
+          aria-controls="navigation"
+          aria-label="Show or hide Top Level Navigation"
+        >
+          Menu
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="5"
+              y1="19.8752"
+              x2="35"
+              y2="19.8752"
+              stroke="#003078"
+              stroke-width="3"
+            />
+            <line
+              x1="5"
+              y1="29.2507"
+              x2="30.5009"
+              y2="29.2507"
+              stroke="#003078"
+              stroke-width="3"
+            />
+            <line
+              x1="5.00177"
+              y1="10.5"
+              x2="30.5027"
+              y2="10.5"
+              stroke="#003078"
+              stroke-width="3"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="idsk-header-extended__content">
+          <nav>
+            <ul
+              class="idsk-header-extended__navigation"
+              aria-label="Top Level Navigation"
+            >
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="../../index.html"
+                  title="Portál noriem"
+                >
+                  Portál noriem
+                </a>
+              </li>
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link"
+                  href="./pages/stn-online/index.html"
+                  title="STN-online"
+                >
+                  STN-online
+                </a>
+              </li>
+
+              <li class="idsk-header-extended__navigation-item">
+                <a
+                  class="idsk-header-extended__link cart"
+                  href="#4"
+                  title="Košík"
+                >
+                  Košík<i class="fas fa-shopping-cart"></i>
+                  <span class="cart-item">4</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="idsk-header-extended__mobile">
+          <ul class="auth-user-mobile-version">
+            <li>
+              <a class="my-profile-link" href=""
+                ><i class="fas fa-user" title="Prilásený užívateľ"></i>Môj
+                Profil</a
+              >
+            </li>
+            <li>marek.jurica@normoff.gov.sk</li>
+            <li>
+              <a href=""
+                ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
+                sa</a
+              >
+            </li>
+          </ul>
+
+          <div class="idsk-header-extended__search">
+            <form class="idsk-header-extended__search-form">
+              <label
+                class="idsk-header-extended__search-label"
+                for="idsk-header-extended__search-input-mobile"
+              >
+                ISO 9001
+              </label>
+              <input
+                class="govuk-input govuk-!-display-inline-block"
+                id="idsk-header-extended__search-input-mobile"
+                name="search"
+                type="text"
+                aria-describedby="input-width-30-hint"
+                aria-label="ISO 9001"
+              />
+              <button
+                type="submit"
+                class="govuk-button govuk-!-display-inline-block"
+                data-module="govuk-button"
+              >
+                <span class="govuk-visually-hidden">Vyhľadať</span>
+                <i aria-hidden="true" class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="idsk-header-extended__content">
+            <nav>
+              <ul
+                class="idsk-header-extended__navigation"
+                aria-label="Top Level Navigation"
+              >
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="index.html"
+                    title="Portál noriem"
+                  >
+                    Portál noriem
+                  </a>
+                </li>
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link"
+                    href="#2"
+                    title="STN-online"
+                  >
+                    STN-online
+                  </a>
+                </li>
+
+                <li class="idsk-header-extended__navigation-item">
+                  <a
+                    class="idsk-header-extended__link cart"
+                    href="#4"
+                    title="Košík"
+                  >
+                    Košík<i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item">4</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <hr class="idsk-header-extended__hr" />
+
+          <div class="idsk-header-extended__language">
+            <button type="button" class="idsk-header-extended__language-button">
+              <span class="idsk-header-extended__language--current-text">
+                <img
+                  src="../../assets/images/flags/slovakia-flag-icon-16.png"
+                  alt="slovenčina"
+                  aria-hidden="true"
+                />
+                <span>slovenčina</span>
+              </span>
+            </button>
+            <ul class="idsk-header-extended__language-list">
+              <li class="idsk-header-extended__language-list-item">
+                <a
+                  class="idsk-header-extended__language-list-link"
+                  title="english"
+                  href="#"
+                >
+                  <img
+                    src="../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                    alt="english"
+                    aria-hidden="true"
+                  />
+                  english
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="idsk-header-extended__mobile-close">
+            <span class="govuk-visually-hidden"> Zavrieť menu </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="idsk-header-extended-ie-fix"></div>
+
+    <div class="idsk-header-extended-notification"></div>
+
+    <main class="govuk-width-container">
+        <section id="stn-online">           
+            <div
+              class="govuk-grid-row no govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+            >
+              <div class="govuk-grid-column-full">
+                <div>
+                  <h2
+                    class="govuk-heading-l govuk-!-margin-bottom-2 govuk-!-margin-top-6"
+                  >
+                  STN-online
+                  </h2>
+                </div>
+              </div>
+            </div>   
+
+            <p class="govuk-body govuk-!-margin-top-2">
+              Služba STN-online umožňuje prístup k STN cez internet prostredníctvom predplatného na rok. V službe je zahrnutá automatická aktualizácia noriem zmien a opráv.
+            </p>
+            
+            <div class="govuk-accordion" data-module="govuk-accordion" id="all-sections-open-example">
+                <div class="govuk-accordion__controls">
+                    <button type="button" class="govuk-accordion__open-all" aria-expanded="false">
+                        <span class="govuk-visually-hidden"> sections</span>
+                    </button>
+                </div>
+
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                        
+                            <button type="button" id="reg-section-heading" aria-controls="all-sections-open-example-content-1" class="govuk-accordion__section-button" aria-expanded="false">
+                                Všeobecné informácie o STN-online
+                            </button>
+                            <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                        </h2>
+                    </div>
+
+                    <div id="reg-section-content" class="govuk-accordion__section-content"          aria-labelledby="all-sections-open-example-heading-1">
+                        <p class="govuk-body govuk-hint">
+                           <strong>Služba STN-online umožňuje:</strong> 
+
+                           <ul>
+                               <li class="govuk-hint">prezerať a ukladať vybrané normy STN z internetu na základe ročného predplatného,</li>
+
+                               <li class="govuk-hint">definovať vlastné skupiny noriem (napr. celé triedy alebo skupiny noriem),
+
+                               </li>
+                               <li class="govuk-hint">automatickú aktualizáciu (prístup k zmenám, opravám, príp. nahradzujúcim normám).
+
+                               </li>
+                           </ul>               
+                            
+                        </p>
+                        <p class="govuk-body">                          
+                            <strong>Všeobecné licenčné a technické podmienky</strong>                        
+                        
+                        
+                            <p class="govuk-body">
+                                Texty noriem STN vo formáte PDF sa nachádzajú v portáli noriem, používateľ služby potrebuje byť pripojený na internet. Prístup k PDF súborom je zabezpečený pomocou protokolu http, resp. https a podlieha autentifikácii.
+                            </p> 
+
+                            <p class="govuk-body">
+                                Na prezeranie PDF súborov sa vyžaduje použitie bezplatného softvéru Internet Explorer verzia 7 alebo vyššia (Mozilla Firefox 3.5 alebo vyššia), Acrobat Reader CZ/SK/EN verzie 7, 8, 9, 10, 11, DC  a inštaláciu zásuvného modulu (plugin) firmy File Open. Potrebný software je možné stiahnuť zo servera predávajúceho po prihlásení užívateľa do systému alebo priamo u výrobcu pluginu na stránke <a class="idsk-header__link" href="http://plugin.fileopen.com">http://plugin.fileopen.com</a> . Podporovaný operačný systém je MS Windows 7/8/10.
+                            </p>
+
+                            <p class="govuk-body">
+                                Súbory sa môžu otvárať priamo zo servera poskytovateľa alebo  sa môžu sťahovať na lokálny disk a otvárať v režime off-line (bez aktuálneho pripojenia na internet) počas obdobia, ktoré sa stanoví v zmluve. Po uplynutí tohto času sa súbor zablokuje a možnosť otvorenia treba obnoviť opakovaným pripojením.
+                            </p>
+
+                            <p class="govuk-body">
+                                Prihlasovacím menom je e-mailová adresa,
+                                prístupové heslo generuje a automaticky rozosiela systém pomocou e-mailu,
+                                každý registrovaný používateľ  má právo používať sprístupnené STN na stanovenom počte počítačov a operačných systémov (ďalej len OS), spravidla na 1 alebo 2, ak nie je v zmluve uvedené inak. Používateľ si sám zvolí počítače, na ktorých bude chcieť súbory PDF otvárať. Upozornenie: počítač, na ktorom používateľ prvý krát otvorí súbor PDF v rámci jedného OS, sa zaeviduje do systému STN-online, preto na ďalších počítačoch a v iných OS sa už súbor nebude dať otvoriť!
+                                texty noriem sú zabezpečené ochrannými prvkami umožňujúcimi buď iba čítanie, čítanie s prenosom textu a grafiky alebo čítanie s prenosom textu, grafiky a s možnosťou tlače.                               
+                                
+                                <p class="govuk-body">
+                                    <strong>
+                                        Upozornenie: možnosť tlače je nastavená na stanovený počet výtlačkov, pričom pri spustení tlače sa počítajú úplné aj neúplné výtlačky!
+                                    </strong> 
+                                </p>
+
+                            </p>
+                            
+                            <p class="govuk-body">
+                                používateľ nesmie vykonávať žiadne kroky, ktorými by sa odstránili ochranné prvky v súboroch PDF,
+                                ak používateľ systému STN-online zmení hardvér, programové vybavenie alebo nastavenie svojho počítača, následkom čoho je potrebná nová registrácia počítača v systéme STN-online, požiada administrátora systému STN-online o odblokovanie aktuálneho registrovaného počítača v systéme a to na adrese shop_pdf@normoff.gov.sk. Ak administrátor STN-online rozhodne, že  požiadavka je odôvodnená, uvoľní záznam v systéme. Používateľ  sa potom prihlási do systému STN-online a otvorí súbor PDF na zmenenom počítači. Takto sa nový počítač používateľa zaregistruje do systému STN-online.                               
+                            </p>
+
+                            <p class="govuk-body">
+                                <strong>
+                                    Službu STN-online poskytujeme len v prípade, že ročná úhrada za vybrané normy je väčšia ako 332,00 EUR.
+                                </strong> 
+                            </p>
+                        
+                               
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                        
+                            <button type="button" id="reg-section-heading" aria-controls="all-sections-open-example-content-1" class="govuk-accordion__section-button" aria-expanded="false">
+                                Ako si objednať službu STN-online
+                            </button>
+                            <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                        </h2>
+                    </div>
+
+                    <div id="reg-section-content" class="govuk-accordion__section-content"          aria-labelledby="all-sections-open-example-heading-1">
+                        
+                        <p class="govuk-body">
+                            Ak máte záujem o službu STN-online, môžete si nechať vypracovať ponuku na základe nasledovného  <a class="idsk-header__link" href="../../assets/documents/Formular_STN-online_2.xlsx">formulára.</a>     
+                            Na vypracovanie ponuky prosím nezabudnite do formulára uviesť normy, o ktoré by ste mali záujem.
+                            Vyplnený formulár následne pošlite na adresu  <a class="idsk-header__link" href="mailto:shop_pdf@normoff.gov.sk">shop_pdf@normoff.gov.sk</a>
+                        </p>
+                    </div>
+                </div>  
+
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                        
+                            <button type="button" id="reg-section-heading" aria-controls="all-sections-open-example-content-1" class="govuk-accordion__section-button" aria-expanded="false">
+                                Služba STN-online - prvé spustenie
+                            </button>
+                            <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                        </h2>
+                    </div>
+
+                    <div id="reg-section-content" class="govuk-accordion__section-content"          aria-labelledby="all-sections-open-example-heading-1">
+                        <p class="govuk-body govuk-hint">
+                            <span>
+                                <a target="_blank" class="idsk-header__link" href="../../assets/documents/Prihlasenie_STN-online.pdf">Návod na prihlásenie</a>
+                            </span>
+                        </p>
+                        <p class="govuk-body">
+                            Na prezeranie noriem potrebujete mať nainštalovaný Adobe Reader (resp. Adobe Acrobat), ktorý si môžete z <a href="https://get.adobe.com/sk/reader/">https://get.adobe.com/sk/reader/</a> a FileOpen Plugin, ktorý si môžete stiahnuť z: <a href="http://plugin.fileopen.com/all.aspx">http://plugin.fileopen.com/all.aspx</a> 
+
+                        </p>
+                    </div>
+                </div> 
+                
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                        
+                            <button type="button" id="reg-section-heading" aria-controls="all-sections-open-example-content-1" class="govuk-accordion__section-button" aria-expanded="false">
+                              DEMO verzia služby STN-online
+                            </button>
+                            <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                        </h2>
+                    </div>
+
+                    <div id="reg-section-content" class="govuk-accordion__section-content"          aria-labelledby="all-sections-open-example-heading-1">
+                        <p class="govuk-body govuk-hint">
+                          V demo verzii si môžete vyskýšať bezplatne službu STN-online.
+                        </p>
+                        <p class="govuk-body">
+                            Prihláste sa do portálu noriem pod nasledovnými údajmi:
+                        </p>
+
+                        <p class="govuk-body">
+                            email: testuser@stn-online.sk <br>
+                            heslo: testuser
+                        </p>
+
+                        <p class="govuk-body">
+                            Uprostred tabuľky zaškrtnite "STN-online - moje predplatené stn-online normy" a stlačte "Hľadaj",
+                        </p>
+
+                        <p class="govuk-body">
+                            V zobrazenom výpise noriem nájdete ukážkové texty noriem v stĺpci STN-online, po kliknutí na symbol PDF.
+                        </p>
+                                            
+                    </div>
+                </div> 
+                
+                 
+            </div>
+
+            
+        </section> 
+      
+    </main>
+
+    <footer class="idsk-footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="idsk-footer__meta">
+          <div class="idsk-footer__meta-item">
+            <a href="https://www.unms.sk/" target="_blank">
+              <img
+                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                alt="UNMS SR"
+                width="220"
+              />
+            </a>
+          </div>
+          <div class="idsk-footer__meta-item idsk-footer__meta-item--grow">
+            <span class="idsk-footer__licence-description">
+              Úrad pre normalizáciu, metrológiu a skúšobníctvo Slovenskej
+              republiky.
+            </span>
+            <h2 class="govuk-visually-hidden">Items</h2>
+            <ul class="idsk-footer__inline-list">
+              <li class="idsk-footer__inline-list-item">
+                  <a class="idsk-footer__link" href="../help/index.html"> Pomoc </a>
+                </li>
+            
+              <li class="idsk-footer__inline-list-item">
+                <a target="_blank" class="idsk-footer__link" href="./assets/documents/Technicka_podpora.pdf"> Technická podpora </a>
+              </li>
+              <li class="idsk-footer__inline-list-item">
+                <a class="idsk-footer__link" href="#3"> Kontakty </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+    </script>
+  </body>
+</html>

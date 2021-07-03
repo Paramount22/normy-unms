@@ -1,0 +1,43 @@
+#login {
+  .govuk-button--secondary {
+    margin-left: 0.5rem;
+  }
+
+  #password {
+    position: relative;
+    top: 0.5rem;
+  }
+
+  .login {
+    border: 1px solid $light-grey;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  .govuk-body {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 1rem;
+  }
+
+  .govuk-button {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 40em) {
+  #login {
+    .govuk-button {
+      margin-bottom: 15px;
+    }
+
+    .govuk-button--secondary {
+      position: relative;
+      right: 8px;
+    }
+  }
+}
