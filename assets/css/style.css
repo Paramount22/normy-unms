@@ -918,7 +918,7 @@ ol {
   color: white;
 }
 
-.pagination li .active:hover {
+.pagination li .active:hover, .pagination li .active:active {
   background: #003078;
   color: white;
   cursor: no-drop;
@@ -932,13 +932,13 @@ ol {
   color: #dee0e2;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 23.75em) {
   .pagination {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875em) {
   .pagination {
     font-size: 0.8rem;
   }

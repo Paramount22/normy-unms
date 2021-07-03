@@ -30,7 +30,8 @@
       background: $dark-blue;
       color: white;
 
-      &:hover {
+      &:hover,
+      &:active {
         background: $dark-blue;
         color: white;
         cursor: no-drop;
@@ -47,13 +48,13 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 23.75em) {
   .pagination {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875em) {
   .pagination {
     font-size: 0.8rem;
   }
