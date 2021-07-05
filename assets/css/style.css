@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap");
-body {
+body,
+html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 100%;
 }
 
 main {
-  min-height: 60vh;
+  min-height: calc(100vh - 200.383px - 165.8px);
 }
 
 ul,
@@ -205,8 +206,8 @@ ol {
   border: 2px solid #dee0e2;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  -webkit-box-shadow: #BFC1C3 0px 5px 15px;
-          box-shadow: #BFC1C3 0px 5px 15px;
+  -webkit-box-shadow: #bfc1c3 0px 5px 15px;
+          box-shadow: #bfc1c3 0px 5px 15px;
 }
 
 #products .classes:hover, #products .classesactive, #products .classes:visited,
@@ -766,7 +767,7 @@ ol {
   padding-bottom: 1rem;
 }
 
-#found-records .found-record-container h3:hover {
+#found-records .found-record-container .heading-standards:hover {
   text-decoration: underline;
 }
 
@@ -862,7 +863,7 @@ ol {
   color: #00703c;
 }
 
-#found-records .found-record-container .withdraw {
+#found-records .found-record-container .withdrawn {
   font-weight: 700;
   color: #d0190f;
 }
@@ -887,14 +888,14 @@ ol {
           align-items: center;
 }
 
-.pagination li {
+.pagination .page-item {
   margin-right: 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.pagination li .page-link {
+.pagination .page-item .page-link {
   position: relative;
   display: block;
   color: #0b0c0c;
@@ -908,17 +909,17 @@ ol {
   padding: 0.375rem 0.75rem;
 }
 
-.pagination li .page-link:hover, .pagination li .page-link:active {
-  background: #BFC1C3;
+.pagination .page-item .page-link:hover, .pagination .page-item .page-link:active {
+  background: #bfc1c3;
   color: white;
 }
 
-.pagination li .active {
+.pagination .page-item .active {
   background: #003078;
   color: white;
 }
 
-.pagination li .active:hover, .pagination li .active:active {
+.pagination .page-item .active:hover, .pagination .page-item .active:active {
   background: #003078;
   color: white;
   cursor: no-drop;
@@ -942,5 +943,64 @@ ol {
   .pagination {
     font-size: 0.8rem;
   }
+}
+
+#detail-of-standard .product-type {
+  border: 1px solid #bfc1c3;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#detail-of-standard .product-type .type {
+  margin-bottom: 15px;
+}
+
+#detail-of-standard .product-type .fa-book {
+  color: #0b0c0c;
+}
+
+#detail-of-standard .product-type .fa-file-pdf {
+  color: #d0190f;
+}
+
+#detail-of-standard .valid {
+  color: #00703c;
+}
+
+#detail-of-standard .title {
+  width: 20%;
+}
+
+#detail-of-standard .withdrawn {
+  color: #d0190f;
+}
+
+#detail-of-standard .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#detail-of-standard .language img {
+  margin-left: 0.4rem;
 }
 /*# sourceMappingURL=style.css.map */

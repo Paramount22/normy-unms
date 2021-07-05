@@ -8,7 +8,7 @@
     <!--[if !IE 8]><!-->
     <link
       rel="stylesheet"
-      href="../../../assets/css/idsk-frontend-2.6.0.min.css"
+      href="../../../../assets/css/idsk-frontend-2.6.0.min.css"
     />
     <!--<![endif]-->
     <!--[if IE 8]>
@@ -28,7 +28,7 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../../../assets/css/style.css" />
     <title>Normy UNMS - Portál noriem</title>
   </head>
 
@@ -84,7 +84,7 @@
           <button type="button" class="idsk-header-extended__language-button">
             <span class="idsk-header-extended__language--current-text">
               <img
-                src="../../../assets/images/flags/slovakia-flag-icon-16.png"
+                src="../../../../assets/images/flags/slovakia-flag-icon-16.png"
                 alt="slovenčina"
                 aria-hidden="true"
               />
@@ -100,7 +100,7 @@
                 href="#"
               >
                 <img
-                  src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  src="../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                   alt="english"
                   aria-hidden="true"
                 />
@@ -300,7 +300,7 @@
             <button type="button" class="idsk-header-extended__language-button">
               <span class="idsk-header-extended__language--current-text">
                 <img
-                  src="../../../assets/images/flags/slovakia-flag-icon-16.png"
+                  src="../../../../assets/images/flags/slovakia-flag-icon-16.png"
                   alt="slovenčina"
                   aria-hidden="true"
                 />
@@ -315,7 +315,7 @@
                   href="#"
                 >
                   <img
-                    src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                    src="../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                     alt="english"
                     aria-hidden="true"
                   />
@@ -337,7 +337,17 @@
     <div class="idsk-header-extended-notification"></div>
 
     <main class="govuk-width-container">
-      <section id="found-records">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../../../../index.html"
+              >Portál noriem</a
+            >
+          </li>
+          <li class="govuk-breadcrumbs__list-item">STN EN 190110</li>
+        </ol>
+      </div>
+      <section id="detail-of-standard">
         <div
           class="govuk-grid-row no govuk-!-padding-top-0 govuk-!-padding-bottom-0"
         >
@@ -346,170 +356,200 @@
               <h2
                 class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-4"
               >
-                Zoznam vybraných noriem
+                STN EN 190110
               </h2>
             </div>
-            <p class="govuk-body-l">
-              Hľadný záznam: <strong>" 19011 "</strong>
-            </p>
           </div>
         </div>
-        <a
-          href="../../../pages/portal_of_standards/advanced_standard_search/index.html"
-          class="govuk-back-link"
+
+        <a href="../../found_records/index.html" class="govuk-back-link"
           >Späť</a
         >
-        <div class="found-record-container">
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-              <a href="../detail_of_standard/index.html">
-                <h3 class="govuk-heading-m heading-standards">STN EN ISO 19011 (01 0330)</h3>
-              </a>
-              <div class="detail">
-                <p class="govuk-body">
-                  <span class="valid">Platná</span>
-                </p>
-                <p class="govuk-body"><strong>1.6.2019</strong></p>
-                <p class="govuk-body language">
-                  SK/EN
-                  <img
-                    src="../../../assets/images/flags/slovakia.png"
-                    width="35"
-                    alt="Sloveský jazyk"
-                  />
-                </p>
-              </div>
-
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <div class="product-type">
+              <span class="type">
+                <i class="fas fa-book fa-4x"></i>
+              </span>
               <p class="govuk-body">
-                Návod na auditovanie systémov manažérstva (ISO 19011: 2018)
+                <strong>Pridať listinnú formu normy do košíka:</strong>
               </p>
-              <p class="govuk-body">
-                <span>
-                  <a class="idsk-footer__link order-link" href="../detail_of_standard/index.html">
-                    <strong> Detail normy s možnosťou objednania </strong>
-                  </a>
-                </span>
-              </p>
+              <span>
+                <a href="" class="idsk-button" data-module="idsk-button">
+                  Pridať do košíka
+                </a>
+              </span>
             </div>
-            <div class="govuk-grid-column-one-third">
-              <h3 class="govuk-heading-m">STN-online</h3>
-
-              <a class="stn-online-download-link" href="">
-                <i class="far fa-file-pdf fa-4x" title="Stiahnuť normu"></i>
-                <strong>Stiahnuť</strong>
-              </a>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <div class="product-type">
+              <span class="type">
+                <i class="far fa-file-pdf fa-4x"></i>
+              </span>
+              <p class="govuk-body">
+                <strong>Pridať elektronickú formu normy do košíka:</strong>
+              </p>
+              <span>
+                <a href="" class="idsk-button" data-module="idsk-button">
+                  Pridať do košíka
+                </a>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="found-record-container">
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-              <a href="">
-                <h3 class="govuk-heading-m heading-standards">STN EN 190110 (35 8751)</h3>
-              </a>
-              <div class="detail">
-                <p class="govuk-body">
-                  <span class="valid">Platná</span>
-                </p>
-                <p class="govuk-body"><strong>1.11.2000</strong></p>
-                <p class="govuk-body language">
-                  EN
-                  <img
-                    src="../../../assets/images/flags/united-kingdom.png"
-                    width="35"
-                    alt="Anglický jazyk"
-                  />
-                </p>
-              </div>
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">
+                <strong>Označenie:</strong>
+              </td>
+              <td class="govuk-table__cell withdrawn">
+                <strong>STN EN ISO 19011</strong>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Platnosť:</td>
+              <td class="govuk-table__cell">
+                <span class="withdrawn"> <strong>Zrušená</strong> </span>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Listinná verzia:</td>
+              <td class="govuk-table__cell">
+                <strong> 28,80 &#128;</strong>
+              </td>
+            </tr>
 
-              <p class="govuk-body">
-                Vzorová predmetová špecifikácia. Číslicové integrované obvody -
-                mikroprocesory
-              </p>
-              <p class="govuk-body">
-                <span>
-                  <a class="idsk-footer__link order-link" href="">
-                    <strong>Detail normy s možnosťou objednania</strong>
-                  </a>
-                </span>
-              </p>
-            </div>
-            <div class="govuk-grid-column-one-third">
-              <h3 class="govuk-heading-m">STN-online</h3>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Elektronická verzia:</td>
+              <td class="govuk-table__cell">
+                a) Bez možnosti tlače, prenosu textu a obrázkov:
+                <strong> 25,92 &#128;</strong> <br />
+                b) Bez možnosti tlače, s prenosom textu a obrázkov:
+                <strong> 28,80 &#128;</strong> <br />
+                c) S možnosťou tlače, prenosu textu a obrázkov:
+                <strong> 37,44 &#128;</strong>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Slovenský názov:</td>
+              <td class="govuk-table__cell">
+                Diagnostické zdravotnícke pomôcky in vitro. Informácie dodávané
+                výrobcom s diagnostickými činidlami in vitro pre farbiace metódy
+                v biológii (ISO 19001: 2013)
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Anglický názov:</td>
+              <td class="govuk-table__cell">
+                In vitro diagnostic medical devices - Information supplied by
+                the manufacturer with in vitro diagnostic reagents for staining
+                in biology (ISO 19001:2013)
+              </td>
+            </tr>
 
-              <a class="stn-online-download-link" href="">
-                <i
-                  class="fas fa-times-circle fa-4x"
-                  title="Nemáte prístup do služby STN-online"
-                ></i>
-              </a>
-            </div>
-          </div>
-        </div>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Pôvodné označenie:</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
 
-        <div class="found-record-container">
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-              <a href="../detail_of_standard/detal_of_standard_withdrawn/index.html">
-                <h3 class="govuk-heading-m heading-standards">STN EN 190110 (35 8751)</h3>
-              </a>
-              <div class="detail">
-                <p class="govuk-body">
-                  <span class="withdrawn">Zrušená</span>
-                </p>
-                <p class="govuk-body"><strong>1.11.1989</strong></p>
-                <p class="govuk-body language">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Dátum vydania:</td>
+              <td class="govuk-table__cell">1. 6. 2019</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Dátum zrušenia:</td>
+              <td class="govuk-table__cell">1.1.2000</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Jazyk:</td>
+              <td class="govuk-table__cell">
+                <div class="language">
                   CS
                   <img
-                    src="../../../assets/images/flags/czech-republic.png"
-                    width="35"
-                    alt="Anglický jazyk"
+                    src="../../../../assets/images/flags/czech-republic.png"
+                    width="30"
+                    alt="Slovenský jazyk"
                   />
-                </p>
-              </div>
+                </div>
+              </td>
+            </tr>
 
-              <p class="govuk-body">
-                Rodová špecifikácia. Číslicové integrované obvody AC MOS
-              </p>
-              <p class="govuk-body">
-                <span>
-                  <a class="idsk-footer__link order-link" href="../detail_of_standard/detal_of_standard_withdrawn/index.html">
-                    <strong>Detail normy s možnosťou objednania</strong>
-                  </a>
-                </span>
-              </p>
-            </div>
-            <div class="govuk-grid-column-one-third">
-              <h3 class="govuk-heading-m">STN-online</h3>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">ICS:</td>
+              <td class="govuk-table__cell">11.040.55, 11.100.10</td>
+            </tr>
 
-              <a class="stn-online-download-link" href="">
-                <i
-                  class="fas fa-times-circle fa-4x"
-                  title="Nemáte prístup do služby STN-online"
-                ></i>
-              </a>
-            </div>
-          </div>
-        </div>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Triediaci znak:</td>
+              <td class="govuk-table__cell">85 1019</td>
+            </tr>
 
-        <nav aria-label="...">
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" disabled="disabled" aria-disabled="true"
-                >Prechádzajúce</i
-              ></a>
-            </li>
-            <li class="page-item "><a class="page-link active" href="#">1</a></li>
-            <li class="page-item" aria-current="page">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#"> Ďalšie </a>
-            </li>
-          </ul>
-        </nav>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Úroveň zapracovania:</td>
+              <td class="govuk-table__cell">
+                idt EN ISO 19001:2013/Cor. Apr.:2013, idt ISO 19001:2013, idt EN
+                ISO 19001:2013
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Vestník:</td>
+              <td class="govuk-table__cell">05/19</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Vestník harmonizácie:</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Nariadenie vlády:</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Zmeny:</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Nahradzujúce normy:</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Nahradené normy:</td>
+              <td class="govuk-table__cell">
+                STN EN ISO 19011:2019-01 (01 0330)
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Poznámka vo Vestníku:</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell title">Predmet normy:</td>
+              <td class="govuk-table__cell">
+                Tento dokument poskytuje usmernenia na auditovanie systémov
+                manažérstva vrátane zásad auditovania, manažérstva programu
+                auditu a vykonávania auditov systému manažérstva a aj usmernenie
+                na hodnotenie kompetentnosti jednotlivcov zapojených do procesu
+                auditu. Tieto činnosti zahŕňajú jednotlivca (jednotlivcov),
+                ktorý manažuje (ktorí manažujú) program auditu, audítorov a
+                audítorské tímy. To je aplikovateľné vo všetkých organizáciách,
+                ktoré potrebujú plánovať a vykonávať interné alebo externé
+                audity systémov manažérstva alebo manažovať program auditu.
+                Tento dokument sa môže aplikovať na ďalšie typy auditov za
+                predpokladu osobitného zvažovania potreby špecifickej
+                kompetentnosti.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 
@@ -568,7 +608,7 @@
       </div>
     </footer>
 
-    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script src="../../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
     <script>
       window.GOVUKFrontend.initAll();
     </script>

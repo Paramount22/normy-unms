@@ -2,19 +2,20 @@
 
 $red: #d0190f;
 $dark-grey: #626a6e;
-$mid-grey: #BFC1C3;
+$mid-grey: #bfc1c3;
 $dark-blue: #003078;
 $light-grey: #dee0e2;
 $green: #00703c;
 $black: #0b0c0c;
 
-body {
+body,
+html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 100%;
 }
 
 main {
-  min-height: 60vh;
+  min-height: calc(100vh - 200.383px - 165.8px);
 }
 
 ul,

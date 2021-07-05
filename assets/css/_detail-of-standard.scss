@@ -1,0 +1,44 @@
+#detail-of-standard {
+  .product-type {
+    border: 1px solid $mid-grey;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .type {
+      margin-bottom: 15px;
+    }
+
+    .fa-book {
+      color: $black;
+    }
+
+    .fa-file-pdf {
+      color: $red;
+    }
+  }
+
+  .valid {
+    color: $green;
+  }
+
+  .title {
+    width: 20%;
+  }
+
+  .withdrawn {
+    color: $red;
+  }
+
+  .language {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-left: 0.4rem;
+    }
+  }
+}

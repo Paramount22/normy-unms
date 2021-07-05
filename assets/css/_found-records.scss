@@ -14,7 +14,9 @@
     h3 {
       border-bottom: 1px solid $dark-grey;
       padding-bottom: 1rem;
+    }
 
+    .heading-standards {
       &:hover {
         text-decoration: underline;
       }
@@ -85,7 +87,7 @@
       color: $green;
     }
 
-    .withdraw {
+    .withdrawn {
       font-weight: 700;
       color: $red;
     }
