@@ -8,7 +8,7 @@
     <!--[if !IE 8]><!-->
     <link
       rel="stylesheet"
-      href="../../../../assets/css/idsk-frontend-2.6.0.min.css"
+      href="../../../assets/css/idsk-frontend-2.6.0.min.css"
     />
     <!--<![endif]-->
     <!--[if IE 8]>
@@ -28,9 +28,10 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="../../../../assets/css/style.css" />
-    <title>Normy UNMS - Objednané elektronické normy na stiahnutie</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <title>Normy UNMS - Potvrdenie objednávky</title>
   </head>
+
   <body class="govuk-template__body js-enabled">
     <header
       id="header"
@@ -39,15 +40,12 @@
     >
       <div class="idsk-header-extended__container govuk-width-container">
         <div
-          class="
-            idsk-header-extended__logo
-            govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop
-          "
+          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
         >
           <a href="/" title="UNMS SR">
             <div class="idsk-header-extended__logotype-crown">
               <img
-                src="../../../../assets/images/logo/UNMS_header.png"
+                src="../../../assets/images/logo/UNMS_header.png"
                 width="260"
                 alt="UNMS SR"
               />
@@ -87,7 +85,7 @@
           <button type="button" class="idsk-header-extended__language-button">
             <span class="idsk-header-extended__language--current-text">
               <img
-                src="../../../../assets/images/flags/slovakia-flag-icon-16.png"
+                src="../../../assets/images/flags/slovakia-flag-icon-16.png"
                 alt="slovenčina"
                 aria-hidden="true"
               />
@@ -103,7 +101,7 @@
                 href="#"
               >
                 <img
-                  src="../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                   alt="english"
                   aria-hidden="true"
                 />
@@ -125,7 +123,7 @@
             </li>
             <li>marekjurica@normoff.gov.sk</li>
             <li>
-              <a href="../../../../pages/header_logout/index.html"
+              <a href="./pages/header_logout/index.html"
                 ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
                 sa</a
               >
@@ -135,10 +133,7 @@
 
         <button
           type="button"
-          class="
-            idsk-header-extended__menu-button
-            idsk-js-header-extended-side-menu
-          "
+          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
           aria-controls="navigation"
           aria-label="Show or hide Top Level Navigation"
         >
@@ -196,7 +191,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="../../../pages/stn-online/index.html"
+                  href="../../stn-online/index.html"
                   title="STN-online"
                 >
                   STN-online
@@ -206,7 +201,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link cart"
-                  href="#4"
+                  href="../../portal_of_standards/cart/cart_paper_standards/index.html"
                   title="Košík"
                 >
                   Košík<i class="fas fa-shopping-cart"></i>
@@ -306,7 +301,7 @@
             <button type="button" class="idsk-header-extended__language-button">
               <span class="idsk-header-extended__language--current-text">
                 <img
-                  src="../../../../../assets/images/flags/slovakia-flag-icon-16.png"
+                  src="../../../assets/images/flags/slovakia-flag-icon-16.png"
                   alt="slovenčina"
                   aria-hidden="true"
                 />
@@ -321,7 +316,7 @@
                   href="#"
                 >
                   <img
-                    src="../../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                    src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                     alt="english"
                     aria-hidden="true"
                   />
@@ -343,51 +338,57 @@
     <div class="idsk-header-extended-notification"></div>
 
     <main class="govuk-width-container">
-      <div class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../index.html"
-              >Môj profil</a
-            >
-          </li>
-          <li class="govuk-breadcrumbs__list-item">
-            Objednané elektronické normy na stiahnutie
-          </li>
-        </ol>
-      </div>
-      <section id="standards_to_download">
-        <div
-          class="
-            govuk-grid-row
-            no
-            govuk-!-padding-top-0 govuk-!-padding-bottom-0
-          "
-        >
-          <div class="govuk-grid-column-full">
-            <div>
-              <h2
-                class="
-                  govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-2
-                "
-              >
-                Objednané elektronické normy na stiahnutie
-              </h2>
-
-              <div class="idsk-warning-text">
-                <div class="idsk-warning-text__text govuk-!-padding-left-2">
-                  Momentále nemáte žiadne elektronické normy na stiahnutie.
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="govuk-grid-column-full govuk-!-padding-0">
+        <div>
+          <h2
+            class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-6"
+          >
+            Ďakujeme za Vašu objednávku
+          </h2>
         </div>
 
-        <a href="../../../../index.html">
-          <button type="submit" class="idsk-button" data-module="idsk-button">
-            Pokračovať
-          </button>
+        <p class="govuk-body">
+          Vaša objednávka bola úspešne vytvorená a v priebehu nasledujúcich
+          minút vám emailom príde potvrdenie objednávky.
+        </p>
+
+        <p class="govuk-body">
+          Prehľad Vašich uskutočnených objednávok nájdete v sekcii
+          <strong>Môj Profil / Prehľad historických objednávok.</strong>
+        </p>
+
+        <a
+          href="../../../index.html"
+          role="button"
+          draggable="false"
+          class="idsk-button idsk-button--start"
+          data-module="idsk-button"
+        >
+          Pokračovať
+          <svg
+            class="idsk-button__start-icon"
+            width="17.5"
+            height="19"
+            viewBox="0 0 15 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.4016 10L0 0H5.59826L15 10H9.4016Z"
+              fill="white"
+            ></path>
+            <path
+              opacity="0.5"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.5984 20L15 10H9.40174L0 20H5.5984Z"
+              fill="white"
+            ></path>
+          </svg>
         </a>
-      </section>
+      </div>
     </main>
 
     <footer class="idsk-footer" role="contentinfo">
@@ -396,7 +397,7 @@
           <div class="idsk-footer__meta-item">
             <a href="https://www.unms.sk/" target="_blank">
               <img
-                src="../../../../assets/images/logo/UNMS_footer.png"
+                src="../../../assets/images/logo/UNMS_footer.png"
                 width="260"
                 alt="UNMS SR"
               />
@@ -410,10 +411,7 @@
             <h2 class="govuk-visually-hidden">Items</h2>
             <ul class="idsk-footer__inline-list">
               <li class="idsk-footer__inline-list-item">
-                <a
-                  class="idsk-footer__link"
-                  href="../../../../pages/help/index.html"
-                >
+                <a class="idsk-footer__link" href="../../../help/index.html">
                   Pomoc
                 </a>
               </li>
@@ -422,7 +420,7 @@
                 <a
                   target="_blank"
                   class="idsk-footer__link"
-                  href="../../../../../assets/documents/Technicka_podpora.pdf"
+                  href="../../../../assets/documents/Technicka_podpora.pdf"
                 >
                   Technická podpora
                 </a>
@@ -460,7 +458,7 @@
       </div>
     </footer>
 
-    <script src="../../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
     <script>
       window.GOVUKFrontend.initAll();
     </script>

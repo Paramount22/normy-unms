@@ -29,12 +29,19 @@
   }
 }
 
+#my-profile-orders {
+  .orders {
+    margin-bottom: 30px;
+  }
+}
+
 #my-profile-orders,
 #standards_to_download,
 #standards_online {
   .orders {
     border: 1px solid $light-grey;
     padding: 1rem;
+    margin-bottom: 30px;
   }
 
   h3 {
@@ -63,6 +70,10 @@
     border: 1px solid $light-grey;
     padding: 1rem;
     margin-bottom: 30px;
+
+    h3 {
+      border-bottom: 1px solid $light-grey;
+    }
 
     .govuk-table__cell {
       width: 5rem;

@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap");
 body,
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
 }
 
 main {
-  min-height: calc(100vh - 200.383px - 165.8px);
+  min-height: calc(100vh - 201.267px - 166.933px);
 }
 
 ul,
@@ -453,11 +453,16 @@ ol {
   margin-bottom: 10px;
 }
 
+#my-profile-orders .orders {
+  margin-bottom: 30px;
+}
+
 #my-profile-orders .orders,
 #standards_to_download .orders,
 #standards_online .orders {
   border: 1px solid #dee0e2;
   padding: 1rem;
+  margin-bottom: 30px;
 }
 
 #my-profile-orders h3,
@@ -503,6 +508,10 @@ ol {
   border: 1px solid #dee0e2;
   padding: 1rem;
   margin-bottom: 30px;
+}
+
+#order-deteil .orders h3 {
+  border-bottom: 1px solid #dee0e2;
 }
 
 #order-deteil .orders .govuk-table__cell {
@@ -902,10 +911,10 @@ ol {
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee0e2;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   padding: 0.375rem 0.75rem;
 }
 
@@ -1002,5 +1011,235 @@ ol {
 
 #detail-of-standard .language img {
   margin-left: 0.4rem;
+}
+
+#detail-of-standard .email-order-only .product-type {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#modal-for-paper-version,
+#modal-for-electronic-version {
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+#modal-for-paper-version .notice,
+#modal-for-electronic-version .notice {
+  width: 30%;
+  background: #f8f4f4;
+  padding: 1rem;
+}
+
+#modal-for-paper-version .notice h3,
+#modal-for-electronic-version .notice h3 {
+  border-bottom: 1px solid #dee0e2;
+  padding-bottom: 1rem;
+  color: #d0190f;
+}
+
+#modal-for-paper-version .notice .govuk-body,
+#modal-for-electronic-version .notice .govuk-body {
+  margin-bottom: 10px;
+}
+
+#modal-for-paper-version .notice .govuk-form-group,
+#modal-for-electronic-version .notice .govuk-form-group {
+  margin-bottom: 0;
+  border-top: 1px solid #dee0e2;
+  padding-top: 1rem;
+}
+
+#modal-for-paper-version .notice a,
+#modal-for-electronic-version .notice a {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 62.5em) {
+  #modal-for-paper-version .notice,
+  #modal-for-electronic-version .notice {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  #modal-for-paper-version .notice,
+  #modal-for-electronic-version .notice {
+    width: 80%;
+  }
+}
+
+#shopping-cart .idsk-warning-text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#shopping-cart .orders {
+  border: 1px solid #dee0e2;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+#shopping-cart .orders h4 {
+  border-bottom: 1px solid #dee0e2;
+}
+
+#shopping-cart .orders select {
+  width: 100%;
+}
+
+#shopping-cart a {
+  color: #0b0c0c;
+  text-decoration: none;
+}
+
+#shopping-cart a:hover, #shopping-cart a:active {
+  text-decoration: underline;
+}
+
+#shopping-cart .standard {
+  width: 70%;
+}
+
+#shopping-cart .quantity {
+  width: 5%;
+}
+
+#shopping-cart .fa-times {
+  color: #d0190f;
+  font-size: 1.7rem;
+}
+
+#shopping-cart .fa-question-circle {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+
+#shopping-cart .price {
+  text-align: center;
+}
+
+#shopping-cart .sum {
+  font-size: 1.5rem;
+  background: #dee0e2;
+}
+
+#shopping-cart .govuk-button {
+  color: white;
+  margin-right: 1rem;
+}
+
+#shopping-cart .govuk-button:hover {
+  text-decoration: none;
+}
+
+#shopping-cart .govuk-button--secondary {
+  color: #0b0c0c;
+}
+
+@media screen and (max-width: 40em) {
+  #shopping-cart .sum {
+    font-size: 1rem;
+  }
+}
+
+#confirm-order .order-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#confirm-order .orders {
+  border: 1px solid #dee0e2;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+#confirm-order .orders h3 {
+  border-bottom: 1px solid #dee0e2;
+}
+
+#confirm-order .orders label {
+  padding-bottom: 15px;
+}
+
+#confirm-order .orders .govuk-table__cell {
+  width: 5rem;
+}
+
+#confirm-order .orders .govuk-body-l {
+  margin-bottom: 0;
+}
+
+#confirm-order .govuk-body {
+  padding-bottom: 1rem;
+}
+
+#confirm-order .govuk-body-l {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 40em) {
+  #confirm-order .orders .govuk-grid-column-one-half {
+    padding-top: 15px;
+  }
+}
+
+#classes .govuk-accordion__section-button,
+#ics-codes .govuk-accordion__section-button {
+  color: #003078;
+}
+
+#classes ul,
+#ics-codes ul {
+  margin: 0;
+}
+
+#classes ul li,
+#ics-codes ul li {
+  padding-bottom: 10px;
+}
+
+#classes ul a,
+#ics-codes ul a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+#classes ul a:hover, #classes ul a:active,
+#ics-codes ul a:hover,
+#ics-codes ul a:active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 40em) {
+  #classes ul a,
+  #ics-codes ul a {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

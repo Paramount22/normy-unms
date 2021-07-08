@@ -39,12 +39,16 @@
     >
       <div class="idsk-header-extended__container govuk-width-container">
         <div
-          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
+          class="
+            idsk-header-extended__logo
+            govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop
+          "
         >
           <a href="/" title="UNMS SR">
             <div class="idsk-header-extended__logotype-crown">
               <img
-                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                src="../../assets/images/logo/UNMS_header.png"
+                width="260"
                 alt="UNMS SR"
               />
             </div>
@@ -112,14 +116,16 @@
         <div class="idsk-header-extended__language">
           <ul class="auth-user-desktop-version">
             <li>
-              <a href=""
+              <a
+                class="my-profile-desktop-version"
+                href="../../pages/my_profile/index.html"
                 ><i class="fas fa-user" title="Prilásený užívateľ"></i> Môj
                 Profil
               </a>
             </li>
             <li>marekjurica@normoff.gov.sk</li>
             <li>
-              <a href="./pages/header_logout/index.html"
+              <a href="../../pages/header_logout/index.html"
                 ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
                 sa</a
               >
@@ -129,7 +135,10 @@
 
         <button
           type="button"
-          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
+          class="
+            idsk-header-extended__menu-button
+            idsk-js-header-extended-side-menu
+          "
           aria-controls="navigation"
           aria-label="Show or hide Top Level Navigation"
         >
@@ -178,7 +187,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="index.html"
+                  href="../../index.html"
                   title="Portál noriem"
                 >
                   Portál noriem
@@ -187,7 +196,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="./pages/stn-online/index.html"
+                  href="../../pages/stn-online/index.html"
                   title="STN-online"
                 >
                   STN-online
@@ -336,12 +345,18 @@
     <main class="govuk-width-container">
       <section id="contacts">
         <div
-          class="govuk-grid-row no govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+          class="
+            govuk-grid-row
+            no
+            govuk-!-padding-top-0 govuk-!-padding-bottom-0
+          "
         >
           <div class="govuk-grid-column-full">
             <div>
               <h2
-                class="govuk-heading-l govuk-!-margin-bottom-5 govuk-!-margin-top-5"
+                class="
+                  govuk-heading-l govuk-!-margin-bottom-5 govuk-!-margin-top-5
+                "
               >
                 Kontakty
               </h2>
@@ -455,6 +470,22 @@
               </p>
             </div>
           </div>
+          <div class="govuk-grid-column-one-half">
+            <div class="contact-box">
+              <p class="govuk-body">
+                <strong> Fakturačné údaje </strong>
+              </p>
+              <p class="govuk-body">
+                <i class="fas fa-file-invoice"></i>
+                <a
+                  target="_blank"
+                  class="idsk-footer__link"
+                  href="../../assets/documents/fakturacne_udaje.pdf"
+                  >Fakturačné údaje najdete na tomto odkaze</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="govuk-grid-row govuk-!-margin-top-5">
@@ -539,9 +570,9 @@
           <div class="idsk-footer__meta-item">
             <a href="https://www.unms.sk/" target="_blank">
               <img
-                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                src="../../assets/images/logo/UNMS_footer.png"
+                width="260"
                 alt="UNMS SR"
-                width="220"
               />
             </a>
           </div>
@@ -553,7 +584,7 @@
             <h2 class="govuk-visually-hidden">Items</h2>
             <ul class="idsk-footer__inline-list">
               <li class="idsk-footer__inline-list-item">
-                <a class="idsk-footer__link" href="../help/index.html">
+                <a class="idsk-footer__link" href="../../pages/help/index.html">
                   Pomoc
                 </a>
               </li>
@@ -567,8 +598,30 @@
                   Technická podpora
                 </a>
               </li>
+
               <li class="idsk-footer__inline-list-item">
-                <a class="idsk-footer__link" href="./pages/contacts/index.html">
+                <a
+                  target="_blank"
+                  class="idsk-footer__link"
+                  href="https://www.slov-lex.sk/static/pdf/2019/76/ZZ_2019_76_20190401.pdf"
+                >
+                  Vyhláška č. 76/2019
+                </a>
+              </li>
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  target="_blank"
+                  class="idsk-footer__link"
+                  href="https://www.unms.sk/?dotaznik-spokojnosti-obcanov-zakaznikov-a-inych-zainteresovanych-stran-unms-sr"
+                >
+                  Dotazník spokojnosti
+                </a>
+              </li>
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  class="idsk-footer__link"
+                  href="../../pages/contacts/index.html"
+                >
                   Kontakty
                 </a>
               </li>

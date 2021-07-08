@@ -8,7 +8,7 @@
     <!--[if !IE 8]><!-->
     <link
       rel="stylesheet"
-      href="../../../../assets/css/idsk-frontend-2.6.0.min.css"
+      href="../../../assets/css/idsk-frontend-2.6.0.min.css"
     />
     <!--<![endif]-->
     <!--[if IE 8]>
@@ -28,8 +28,8 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="../../../../assets/css/style.css" />
-    <title>Normy UNMS - Objednané elektronické normy na stiahnutie</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <title>Normy UNMS - Triedy noriem</title>
   </head>
   <body class="govuk-template__body js-enabled">
     <header
@@ -39,15 +39,12 @@
     >
       <div class="idsk-header-extended__container govuk-width-container">
         <div
-          class="
-            idsk-header-extended__logo
-            govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop
-          "
+          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
         >
           <a href="/" title="UNMS SR">
             <div class="idsk-header-extended__logotype-crown">
               <img
-                src="../../../../assets/images/logo/UNMS_header.png"
+                src="../../../assets/images/logo/UNMS_header.png"
                 width="260"
                 alt="UNMS SR"
               />
@@ -87,7 +84,7 @@
           <button type="button" class="idsk-header-extended__language-button">
             <span class="idsk-header-extended__language--current-text">
               <img
-                src="../../../../assets/images/flags/slovakia-flag-icon-16.png"
+                src="../../../assets/images/flags/slovakia-flag-icon-16.png"
                 alt="slovenčina"
                 aria-hidden="true"
               />
@@ -103,7 +100,7 @@
                 href="#"
               >
                 <img
-                  src="../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                   alt="english"
                   aria-hidden="true"
                 />
@@ -118,14 +115,14 @@
             <li>
               <a
                 class="my-profile-desktop-version"
-                href="../../my_profile/index.html"
+                href="../../../pages/my_profile/index.html"
                 ><i class="fas fa-user" title="Prilásený užívateľ"></i> Môj
                 Profil
               </a>
             </li>
             <li>marekjurica@normoff.gov.sk</li>
             <li>
-              <a href="../../../../pages/header_logout/index.html"
+              <a href="../../pages/header_logout/index.html"
                 ><i class="fas fa-power-off" title="Odhlásenie"></i> Odhlásiť
                 sa</a
               >
@@ -135,10 +132,7 @@
 
         <button
           type="button"
-          class="
-            idsk-header-extended__menu-button
-            idsk-js-header-extended-side-menu
-          "
+          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
           aria-controls="navigation"
           aria-label="Show or hide Top Level Navigation"
         >
@@ -306,7 +300,7 @@
             <button type="button" class="idsk-header-extended__language-button">
               <span class="idsk-header-extended__language--current-text">
                 <img
-                  src="../../../../../assets/images/flags/slovakia-flag-icon-16.png"
+                  src="../../assets/images/flags/slovakia-flag-icon-16.png"
                   alt="slovenčina"
                   aria-hidden="true"
                 />
@@ -321,7 +315,7 @@
                   href="#"
                 >
                   <img
-                    src="../../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                    src="../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                     alt="english"
                     aria-hidden="true"
                   />
@@ -346,47 +340,201 @@
       <div class="govuk-breadcrumbs">
         <ol class="govuk-breadcrumbs__list">
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../index.html"
-              >Môj profil</a
+            <a class="govuk-breadcrumbs__link" href="../../../index.html"
+              >Portál noriem</a
             >
           </li>
-          <li class="govuk-breadcrumbs__list-item">
-            Objednané elektronické normy na stiahnutie
-          </li>
+          <li class="govuk-breadcrumbs__list-item">Triedy noriem</li>
         </ol>
       </div>
-      <section id="standards_to_download">
+
+      <section id="classes">
         <div
-          class="
-            govuk-grid-row
-            no
-            govuk-!-padding-top-0 govuk-!-padding-bottom-0
-          "
+          class="govuk-grid-row no govuk-!-padding-top-0 govuk-!-padding-bottom-0"
         >
           <div class="govuk-grid-column-full">
             <div>
               <h2
-                class="
-                  govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-2
-                "
+                class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-2"
               >
-                Objednané elektronické normy na stiahnutie
+                Triedy noriem
               </h2>
-
-              <div class="idsk-warning-text">
-                <div class="idsk-warning-text__text govuk-!-padding-left-2">
-                  Momentále nemáte žiadne elektronické normy na stiahnutie.
-                </div>
-              </div>
             </div>
+            <p class="govuk-body">
+              Možnosť vyhľadávania technických noriem podľa zaradenia do
+              jednotlivých tried.
+            </p>
           </div>
         </div>
 
-        <a href="../../../../index.html">
-          <button type="submit" class="idsk-button" data-module="idsk-button">
-            Pokračovať
-          </button>
-        </a>
+        <div
+          class="govuk-accordion"
+          data-module="govuk-accordion"
+          id="all-sections-open-example"
+        >
+          <div class="govuk-accordion__controls">
+            <button
+              type="button"
+              class="govuk-accordion__open-all"
+              aria-expanded="false"
+            >
+              <span class="govuk-visually-hidden"> sections</span>
+            </button>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <button
+                  type="button"
+                  id="reg-section-heading"
+                  aria-controls="all-sections-open-example-content-1"
+                  class="govuk-accordion__section-button"
+                  aria-expanded="false"
+                >
+                  01 VŠEOBECNÁ TRIEDA
+                </button>
+                <span class="govuk-accordion__icon" aria-hidden="true"></span>
+              </h2>
+            </div>
+
+            <div
+              id="reg-section-content"
+              class="govuk-accordion__section-content"
+              aria-labelledby="all-sections-open-example-heading-1"
+            >
+              <ul>
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 00 Zoznamy a predpisy o normách</a
+                  >
+                </li>
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 01 Pojmy všetkých odborov a triedenia</a
+                  >
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 02 Vyvolené čísla, normálne rozmery, štatistická
+                    kontrola kvality atď.</a
+                  >
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href="">01 03 Kvalita</a>
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href="">01 04 Formáty a písmo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <button
+                  type="button"
+                  id="reg-section-heading"
+                  aria-controls="all-sections-open-example-content-1"
+                  class="govuk-accordion__section-button"
+                  aria-expanded="false"
+                >
+                  02 STROJOVÉ SÚČASTI A SÚČIASTKY
+                </button>
+                <span class="govuk-accordion__icon" aria-hidden="true"></span>
+              </h2>
+            </div>
+
+            <div
+              id="reg-section-content"
+              class="govuk-accordion__section-content"
+              aria-labelledby="all-sections-open-example-heading-1"
+            >
+              <ul>
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 00 Zoznamy a predpisy o normách</a
+                  >
+                </li>
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 01 Pojmy všetkých odborov a triedenia</a
+                  >
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 02 Vyvolené čísla, normálne rozmery, štatistická
+                    kontrola kvality atď.</a
+                  >
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href="">01 03 Kvalita</a>
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href="">01 04 Formáty a písmo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <button
+                  type="button"
+                  id="reg-section-heading"
+                  aria-controls="all-sections-open-example-content-1"
+                  class="govuk-accordion__section-button"
+                  aria-expanded="false"
+                >
+                  03 STROJOVÉ SÚČASTI - KORÓZIA A OCHRANA MATERIÁLU
+                </button>
+                <span class="govuk-accordion__icon" aria-hidden="true"></span>
+              </h2>
+            </div>
+
+            <div
+              id="reg-section-content"
+              class="govuk-accordion__section-content"
+              aria-labelledby="all-sections-open-example-heading-1"
+            >
+              <ul>
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 00 Zoznamy a predpisy o normách</a
+                  >
+                </li>
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 01 Pojmy všetkých odborov a triedenia</a
+                  >
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href=""
+                    >01 02 Vyvolené čísla, normálne rozmery, štatistická
+                    kontrola kvality atď.</a
+                  >
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href="">01 03 Kvalita</a>
+                </li>
+
+                <li>
+                  <a class="idsk-footer__link" href="">01 04 Formáty a písmo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -396,7 +544,7 @@
           <div class="idsk-footer__meta-item">
             <a href="https://www.unms.sk/" target="_blank">
               <img
-                src="../../../../assets/images/logo/UNMS_footer.png"
+                src="../../../assets/images/logo/UNMS_footer.png"
                 width="260"
                 alt="UNMS SR"
               />
@@ -412,7 +560,7 @@
               <li class="idsk-footer__inline-list-item">
                 <a
                   class="idsk-footer__link"
-                  href="../../../../pages/help/index.html"
+                  href="../../../pages/help/index.html"
                 >
                   Pomoc
                 </a>
@@ -422,7 +570,7 @@
                 <a
                   target="_blank"
                   class="idsk-footer__link"
-                  href="../../../../../assets/documents/Technicka_podpora.pdf"
+                  href="../../assets/documents/Technicka_podpora.pdf"
                 >
                   Technická podpora
                 </a>
@@ -449,7 +597,7 @@
               <li class="idsk-footer__inline-list-item">
                 <a
                   class="idsk-footer__link"
-                  href="../../../../pages/contacts/index.html"
+                  href="../../pages/contacts/index.html"
                 >
                   Kontakty
                 </a>
@@ -460,7 +608,7 @@
       </div>
     </footer>
 
-    <script src="../../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
     <script>
       window.GOVUKFrontend.initAll();
     </script>

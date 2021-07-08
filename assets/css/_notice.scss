@@ -1,0 +1,60 @@
+#modal-for-paper-version,
+#modal-for-electronic-version {
+  opacity: 0;
+  pointer-events: none;
+  background: rgba($color: #000000, $alpha: 0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+
+  .notice {
+    width: 30%;
+    background: rgb(248, 244, 244);
+    padding: 1rem;
+
+    h3 {
+      border-bottom: 1px solid $light-grey;
+      padding-bottom: 1rem;
+      color: $red;
+    }
+
+    .govuk-body {
+      margin-bottom: 10px;
+    }
+
+    .govuk-form-group {
+      margin-bottom: 0;
+      border-top: 1px solid $light-grey;
+      padding-top: 1rem;
+    }
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+  #modal-for-paper-version,
+  #modal-for-electronic-version {
+    .notice {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  #modal-for-paper-version,
+  #modal-for-electronic-version {
+    .notice {
+      width: 80%;
+    }
+  }
+}

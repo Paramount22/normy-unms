@@ -1,0 +1,47 @@
+#confirm-order {
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .orders {
+    border: 1px solid $light-grey;
+    padding: 1rem;
+    margin-bottom: 30px;
+
+    h3 {
+      border-bottom: 1px solid $light-grey;
+    }
+
+    label {
+      padding-bottom: 15px;
+    }
+
+    .govuk-table__cell {
+      width: 5rem;
+    }
+
+    .govuk-body-l {
+      margin-bottom: 0;
+    }
+  }
+
+  .govuk-body {
+    padding-bottom: 1rem;
+  }
+
+  .govuk-body-l {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #confirm-order {
+    .orders {
+      .govuk-grid-column-one-half {
+        padding-top: 15px;
+      }
+    }
+  }
+}

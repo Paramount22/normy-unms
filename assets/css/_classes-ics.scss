@@ -1,0 +1,35 @@
+#classes,
+#ics-codes {
+  .govuk-accordion__section-button {
+    color: $dark-blue;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      padding-bottom: 10px;
+    }
+
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #classes,
+  #ics-codes {
+    ul {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

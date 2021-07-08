@@ -1,0 +1,78 @@
+#shopping-cart {
+  .idsk-warning-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .orders {
+    border: 1px solid $light-grey;
+    padding: 1rem;
+    margin-bottom: 30px;
+
+    h4 {
+      border-bottom: 1px solid $light-grey;
+    }
+
+    select {
+      width: 100%;
+    }
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  .standard {
+    width: 70%;
+  }
+
+  .quantity {
+    width: 5%;
+  }
+
+  .fa-times {
+    color: $red;
+    font-size: 1.7rem;
+  }
+
+  .fa-question-circle {
+    margin-left: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .price {
+    text-align: center;
+  }
+
+  .sum {
+    font-size: 1.5rem;
+    background: $light-grey;
+  }
+
+  .govuk-button {
+    color: white;
+    margin-right: 1rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .govuk-button--secondary {
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #shopping-cart {
+    .sum {
+      font-size: 1rem;
+    }
+  }
+}

@@ -29,7 +29,7 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="../../../assets/css/style.css" />
-    <title>Normy UNMS - STN EN ...</title>
+    <title>Normy UNMS - Potvrdenie objednávky</title>
   </head>
 
   <body class="govuk-template__body js-enabled">
@@ -49,6 +49,7 @@
             <div class="idsk-header-extended__logotype-crown">
               <img
                 src="../../../assets/images/logo/UNMS_header.png"
+                width="260"
                 alt="UNMS SR"
               />
             </div>
@@ -118,7 +119,7 @@
             <li>
               <a
                 class="my-profile-desktop-version"
-                href="./pages/my_profile/index.html"
+                href="../../my_profile/index.html"
                 ><i class="fas fa-user" title="Prilásený užívateľ"></i> Môj
                 Profil
               </a>
@@ -187,7 +188,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="index.html"
+                  href="../../../index.html"
                   title="Portál noriem"
                 >
                   Portál noriem
@@ -196,7 +197,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="./pages/stn-online/index.html"
+                  href="../../stn-online/index.html"
                   title="STN-online"
                 >
                   STN-online
@@ -206,7 +207,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link cart"
-                  href="#4"
+                  href="../../portal_of_standards/cart/cart_paper_standards/index.html"
                   title="Košík"
                 >
                   Košík<i class="fas fa-shopping-cart"></i>
@@ -343,17 +344,7 @@
     <div class="idsk-header-extended-notification"></div>
 
     <main class="govuk-width-container">
-      <div class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../../../index.html"
-              >Portál noriem</a
-            >
-          </li>
-          <li class="govuk-breadcrumbs__list-item">STN EN ISO 19011</li>
-        </ol>
-      </div>
-      <section id="detail-of-standard">
+      <section id="confirm-order">
         <div
           class="
             govuk-grid-row
@@ -362,214 +353,380 @@
           "
         >
           <div class="govuk-grid-column-full">
-            <div>
+            <div class="order-header">
               <h2
                 class="
-                  govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-4
+                  govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-6
                 "
               >
-                STN EN ISO 19011
+                Potvrdenie objednávky
               </h2>
+              <span class="print govuk-!-margin-bottom-4">
+                <a class="idsk-footer__link" href="javascript:window.print()">
+                  <i class="fas fa-print" title="Tlačiť"></i> Vytlačiť
+                  objednávku</a
+                >
+              </span>
             </div>
           </div>
         </div>
+
         <span>
-          <a href="../found_records/index.html" class="govuk-back-link">Späť</a>
+          <a
+            href="../cart/cart_paper_standards/index.html"
+            class="govuk-back-link"
+            >Späť</a
+          >
         </span>
 
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <div class="product-type">
-              <span class="type">
-                <i class="fas fa-book fa-4x"></i>
-              </span>
-              <p class="govuk-body">
-                <strong>Pridať listinnú formu normy do košíka:</strong>
-              </p>
-              <span>
-                <a
-                  href="../cart/cart_paper_standards/index.html"
-                  class="idsk-button"
-                  data-module="idsk-button"
-                >
-                  Pridať do košíka
-                </a>
-              </span>
+        <form action="" method="">
+          <div class="orders">
+            <h3
+              class="
+                govuk-heading-m govuk-!-margin-bottom-4 govuk-!-padding-bottom-3
+              "
+            >
+              Fakturačné a kontaktné údaje
+            </h3>
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Číslo objednávky:</strong>
+                  </td>
+                  <td class="govuk-table__cell">148612</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Dátum objednávky:</strong>
+                  </td>
+                  <td class="govuk-table__cell">2021-06-23 09:21</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Meno objednávateľa:</strong>
+                  </td>
+                  <td class="govuk-table__cell">Marek Jurica</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Email objednávateľa:</strong>
+                  </td>
+                  <td class="govuk-table__cell">marek.jurica@normoff.gov.sk</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Telefón:</strong>
+                  </td>
+                  <td class="govuk-table__cell">02/20 90 7 333</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Typ zákazníka:</strong>
+                  </td>
+                  <td class="govuk-table__cell">
+                    Právnická/Fyzická podnikateľ
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Názov organizácie:</strong>
+                  </td>
+                  <td class="govuk-table__cell">UNMS SR</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>IČO:</strong>
+                  </td>
+                  <td class="govuk-table__cell">30810710</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>IČ DPH:</strong>
+                  </td>
+                  <td class="govuk-table__cell">SK2020850711</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Ulica, číslo:</strong>
+                  </td>
+                  <td class="govuk-table__cell">Karloveská 63</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>PSČ:</strong>
+                  </td>
+                  <td class="govuk-table__cell">841 04</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Mesto:</strong>
+                  </td>
+                  <td class="govuk-table__cell">Bratislava</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Štát:</strong>
+                  </td>
+                  <td class="govuk-table__cell">Slovenská republika</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="orders">
+            <h3
+              class="
+                govuk-heading-m govuk-!-margin-bottom-4 govuk-!-padding-bottom-3
+              "
+            >
+              Vaša poznámka k objednávke
+            </h3>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" id="text-hint" for="more-info">
+                Sem môžete napísať doplňujúce informácie k Vašej objednávke.
+              </label>
+              <textarea
+                aria-describedby="text-hint"
+                class="govuk-textarea"
+                id="more-info"
+                name="more-info"
+                rows="5"
+              ></textarea>
             </div>
           </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="product-type">
-              <span class="type">
-                <i class="far fa-file-pdf fa-4x"></i>
-              </span>
-              <p class="govuk-body">
-                <strong>Pridať elektronickú formu normy do košíka:</strong>
-              </p>
-              <span>
-                <a
-                  href="../cart/cart_electronic_standards/index.html"
-                  class="idsk-button"
-                  data-module="idsk-button"
-                >
-                  Pridať do košíka
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
 
-        <table class="govuk-table">
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">
-                <strong>Označenie:</strong>
-              </td>
-              <td class="govuk-table__cell">
-                <strong>STN EN ISO 19011</strong>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Platnosť:</td>
-              <td class="govuk-table__cell">
-                <span class="valid"> <strong>Platná</strong> </span>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Listinná verzia:</td>
-              <td class="govuk-table__cell">
-                <strong> 28,80 &#128;</strong>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Elektronická verzia:</td>
-              <td class="govuk-table__cell">
-                a) Bez možnosti tlače, prenosu textu a obrázkov:
-                <strong> 25,92 &#128;</strong> <br />
-                b) Bez možnosti tlače, s prenosom textu a obrázkov:
-                <strong> 28,80 &#128;</strong> <br />
-                c) S možnosťou tlače, prenosu textu a obrázkov:
-                <strong> 37,44 &#128;</strong>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Slovenský názov:</td>
-              <td class="govuk-table__cell">
-                Diagnostické zdravotnícke pomôcky in vitro. Informácie dodávané
-                výrobcom s diagnostickými činidlami in vitro pre farbiace metódy
-                v biológii (ISO 19001: 2013)
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Anglický názov:</td>
-              <td class="govuk-table__cell">
-                In vitro diagnostic medical devices - Information supplied by
-                the manufacturer with in vitro diagnostic reagents for staining
-                in biology (ISO 19001:2013)
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Pôvodné označenie:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Dátum vydania:</td>
-              <td class="govuk-table__cell">1. 6. 2019</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Dátum zrušenia:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Jazyk:</td>
-              <td class="govuk-table__cell">
-                <div class="language">
-                  SK / EN
-                  <img
-                    src="../../../assets/images/flags/slovakia.png"
-                    width="30"
-                    alt="Slovenský jazyk"
-                  />
+          <div class="orders">
+            <div class="govuk-form-group">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <h3
+                    class="
+                      govuk-heading-m
+                      govuk-!-margin-bottom-4
+                      govuk-!-padding-bottom-3
+                    "
+                  >
+                    Spôsob dopravy
+                  </h3>
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input
+                        class="govuk-radios__input"
+                        id="shipping"
+                        name="shipping"
+                        type="radio"
+                        value=""
+                        checked
+                      />
+                      <label
+                        class="govuk-label govuk-radios__label"
+                        for="shipping"
+                      >
+                        Poštou
+                      </label>
+                    </div>
+                  </div>
                 </div>
-              </td>
-            </tr>
+                <div class="govuk-grid-column-one-half">
+                  <h3
+                    class="
+                      govuk-heading-m
+                      govuk-!-margin-bottom-4
+                      govuk-!-padding-bottom-3
+                      govuk-!-padding-bottom-2
+                    "
+                  >
+                    Úhrada celkom
+                  </h3>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">ICS:</td>
-              <td class="govuk-table__cell">11.040.55, 11.100.10</td>
-            </tr>
+                  <p class="govuk-body-l"><strong>62,70 &euro;</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Triediaci znak:</td>
-              <td class="govuk-table__cell">85 1019</td>
-            </tr>
+          <div class="orders">
+            <h3
+              class="
+                govuk-heading-m govuk-!-margin-bottom-4 govuk-!-padding-bottom-3
+              "
+            >
+              Vyberte spôsob úhrady
+            </h3>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Úroveň zapracovania:</td>
-              <td class="govuk-table__cell">
-                idt EN ISO 19001:2013/Cor. Apr.:2013, idt ISO 19001:2013, idt EN
-                ISO 19001:2013
-              </td>
-            </tr>
+            <div class="govuk-form-group">
+              <fieldset
+                class="govuk-fieldset"
+                aria-describedby="payment-type-error"
+              >
+                <span id="payment-type-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden"
+                    >Vyberte spôsob platby.
+                  </span>
+                </span>
+                <div class="govuk-form-group">
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input
+                        class="govuk-radios__input"
+                        id="payment"
+                        name="payment"
+                        type="radio"
+                        value=""
+                      />
+                      <label
+                        class="govuk-label govuk-radios__label"
+                        for="payment"
+                      >
+                        Zálohová faktúra
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input
+                        class="govuk-radios__input"
+                        id="payment-2"
+                        name="payment"
+                        type="radio"
+                        value=""
+                      />
+                      <label
+                        class="govuk-label govuk-radios__label"
+                        for="payment-2"
+                      >
+                        Dobierka
+                      </label>
+                    </div>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Vestník:</td>
-              <td class="govuk-table__cell">05/19</td>
-            </tr>
+                    <div class="govuk-radios__item">
+                      <input
+                        class="govuk-radios__input"
+                        id="payment-3"
+                        name="payment"
+                        type="radio"
+                        value=""
+                      />
+                      <label
+                        class="govuk-label govuk-radios__label"
+                        for="payment-3"
+                      >
+                        CardPay
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Vestník harmonizácie:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
+          <div class="orders">
+            <div class="govuk-form-group">
+              <span id="license-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden"
+                  >Pre dokončenie objednávky je potrebné potvrdiť súhlas s
+                  licenčnými podmienkami.
+                </span>
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input
+                    type="checkbox"
+                    class="govuk-checkboxes__input"
+                    id="license"
+                    name="license"
+                    aria-describedby="license-error"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="license"
+                    >Súhlasím s licenčnými podmienkami.
+                    <span>
+                      <a
+                        class="idsk-footer__link"
+                        target="_blank"
+                        href="../../assets/documents/podnienky_prevadzkovatela.pdf"
+                        >Licenčné podmienky</a
+                      >
+                    </span></label
+                  >
+                </div>
+              </div>
+            </div>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Nariadenie vlády:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
+            <div class="govuk-form-group">
+              <span id="terms-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden"
+                  >Pre dokončenie registrácie je potrebné potvrdiť súhlas s
+                  obchodnými podmienkami.
+                </span>
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input
+                    type="checkbox"
+                    class="govuk-checkboxes__input"
+                    id="terms"
+                    name="terms"
+                    aria-describedby="terms-error"
+                  />
+                  <label class="govuk-label govuk-checkboxes__label" for="terms"
+                    >Prehlasujem, že som sa oboznámil s obchodnými podmienkami a
+                    zásadami spracúvania osobných údajov.
+                    <span>
+                      <a
+                        class="idsk-footer__link"
+                        target="_blank"
+                        href="../../assets/documents/podnienky_prevadzkovatela.pdf"
+                        >Obchodné podmienky a zásady spracúvania osobných
+                        údajov</a
+                      >
+                    </span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Zmeny:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Nahradzujúce normy:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Nahradené normy:</td>
-              <td class="govuk-table__cell">
-                STN EN ISO 19011:2019-01 (01 0330)
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Poznámka vo Vestníku:</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell title">Predmet normy:</td>
-              <td class="govuk-table__cell">
-                Tento dokument poskytuje usmernenia na auditovanie systémov
-                manažérstva vrátane zásad auditovania, manažérstva programu
-                auditu a vykonávania auditov systému manažérstva a aj usmernenie
-                na hodnotenie kompetentnosti jednotlivcov zapojených do procesu
-                auditu. Tieto činnosti zahŕňajú jednotlivca (jednotlivcov),
-                ktorý manažuje (ktorí manažujú) program auditu, audítorov a
-                audítorské tímy. To je aplikovateľné vo všetkých organizáciách,
-                ktoré potrebujú plánovať a vykonávať interné alebo externé
-                audity systémov manažérstva alebo manažovať program auditu.
-                Tento dokument sa môže aplikovať na ďalšie typy auditov za
-                predpokladu osobitného zvažovania potreby špecifickej
-                kompetentnosti.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <a
+            href="../order_created_successful/index.html"
+            role="button"
+            draggable="false"
+            class="idsk-button idsk-button--start"
+            data-module="idsk-button"
+          >
+            Potvrdiť objednávku
+            <svg
+              class="idsk-button__start-icon"
+              width="17.5"
+              height="19"
+              viewBox="0 0 15 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.4016 10L0 0H5.59826L15 10H9.4016Z"
+                fill="white"
+              ></path>
+              <path
+                opacity="0.5"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.5984 20L15 10H9.40174L0 20H5.5984Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </form>
       </section>
     </main>
 
@@ -579,7 +736,7 @@
           <div class="idsk-footer__meta-item">
             <a href="https://www.unms.sk/" target="_blank">
               <img
-                src="../../../assets/images/logo/UNMS_footer.png"
+                src="../../../../assets/images/logo/UNMS_footer.png"
                 width="260"
                 alt="UNMS SR"
               />
@@ -593,10 +750,7 @@
             <h2 class="govuk-visually-hidden">Items</h2>
             <ul class="idsk-footer__inline-list">
               <li class="idsk-footer__inline-list-item">
-                <a
-                  class="idsk-footer__link"
-                  href="../../../pages/help/index.html"
-                >
+                <a class="idsk-footer__link" href="../../../help/index.html">
                   Pomoc
                 </a>
               </li>
@@ -605,7 +759,7 @@
                 <a
                   target="_blank"
                   class="idsk-footer__link"
-                  href="../../assets/documents/Technicka_podpora.pdf"
+                  href="../../../../assets/documents/Technicka_podpora.pdf"
                 >
                   Technická podpora
                 </a>
@@ -632,7 +786,7 @@
               <li class="idsk-footer__inline-list-item">
                 <a
                   class="idsk-footer__link"
-                  href="../../pages/contacts/index.html"
+                  href="../../../../pages/contacts/index.html"
                 >
                   Kontakty
                 </a>

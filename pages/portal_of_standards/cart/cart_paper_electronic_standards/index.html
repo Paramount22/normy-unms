@@ -29,8 +29,9 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="../../../../assets/css/style.css" />
-    <title>Normy UNMS - Objednané elektronické normy na stiahnutie</title>
+    <title>Normy UNMS - Košík</title>
   </head>
+
   <body class="govuk-template__body js-enabled">
     <header
       id="header"
@@ -39,10 +40,7 @@
     >
       <div class="idsk-header-extended__container govuk-width-container">
         <div
-          class="
-            idsk-header-extended__logo
-            govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop
-          "
+          class="idsk-header-extended__logo govuk-grid-column-one-half govuk-grid-column-one-third-from-desktop"
         >
           <a href="/" title="UNMS SR">
             <div class="idsk-header-extended__logotype-crown">
@@ -118,7 +116,7 @@
             <li>
               <a
                 class="my-profile-desktop-version"
-                href="../../my_profile/index.html"
+                href="../../../my_profile/index.html"
                 ><i class="fas fa-user" title="Prilásený užívateľ"></i> Môj
                 Profil
               </a>
@@ -135,10 +133,7 @@
 
         <button
           type="button"
-          class="
-            idsk-header-extended__menu-button
-            idsk-js-header-extended-side-menu
-          "
+          class="idsk-header-extended__menu-button idsk-js-header-extended-side-menu"
           aria-controls="navigation"
           aria-label="Show or hide Top Level Navigation"
         >
@@ -187,7 +182,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="../../../index.html"
+                  href="../../../../index.html"
                   title="Portál noriem"
                 >
                   Portál noriem
@@ -196,7 +191,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="../../../pages/stn-online/index.html"
+                  href="../../pages/stn-online/index.html"
                   title="STN-online"
                 >
                   STN-online
@@ -343,50 +338,268 @@
     <div class="idsk-header-extended-notification"></div>
 
     <main class="govuk-width-container">
-      <div class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../index.html"
-              >Môj profil</a
-            >
-          </li>
-          <li class="govuk-breadcrumbs__list-item">
-            Objednané elektronické normy na stiahnutie
-          </li>
-        </ol>
-      </div>
-      <section id="standards_to_download">
+      <section id="shopping-cart">
         <div
-          class="
-            govuk-grid-row
-            no
-            govuk-!-padding-top-0 govuk-!-padding-bottom-0
-          "
+          class="govuk-grid-row no govuk-!-padding-top-0 govuk-!-padding-bottom-0"
         >
           <div class="govuk-grid-column-full">
             <div>
               <h2
-                class="
-                  govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-2
-                "
+                class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-6"
               >
-                Objednané elektronické normy na stiahnutie
+                Košík
               </h2>
+            </div>
 
-              <div class="idsk-warning-text">
-                <div class="idsk-warning-text__text govuk-!-padding-left-2">
-                  Momentále nemáte žiadne elektronické normy na stiahnutie.
+            <p class="govuk-body">Váš košík obsahuje vybrané produkty.</p>
+          </div>
+        </div>
+        <form action="" method="">
+          <div class="orders">
+            <h4
+              class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-padding-bottom-3"
+            >
+              Licenčné podmienky pre elektronické normy
+            </h4>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="standards-license">
+                    <strong>Licencia:</strong>
+                  </label>
+
+                  <select
+                    class="govuk-select"
+                    id="standards-license"
+                    name="standards-license"
+                  >
+                    <option value="1">
+                      Bez možnosti tlače, prenosu textu a obrázkov
+                    </option>
+                    <option value="6">
+                      Bez možnosti tlače, s prenosom textu a obrázkov
+                    </option>
+                    <option value="9" selected="selected">
+                      S možnosťou tlače, prenosu textu a obrázkov
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="license-on-pc">
+                    <strong>Obmedzenie na počet PC:</strong>
+                  </label>
+
+                  <select
+                    class="govuk-select"
+                    id="license-on-pc"
+                    name="license-on-pc"
+                  >
+                    <option value="1" selected="selected">pre 1 PC</option>
+                    <option value="2">do 5 PC</option>
+                    <option value="3">do 10 PC</option>
+                    <option value="4">do 20 PC</option>
+                    <option value="5">do 50 PC</option>
+                    <option value="6">pre viac ako 50 PC</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="standards-license">
+                    <strong>Spôsob doručenia:</strong>
+                    <span>
+                      <a
+                        target="_blank"
+                        href="../../../../assets/documents/Vysvetlivky.pdf"
+                      >
+                        <i
+                          class="fas fa-question-circle"
+                          title="Vysvetlivky"
+                        ></i>
+                      </a>
+                    </span>
+                  </label>
+
+                  <select
+                    class="govuk-select"
+                    id="standards-license"
+                    name="standards-license"
+                  >
+                    <option value="1" selected="selected">
+                      Stiahnuť (download)
+                    </option>
+                    <option value="2">Online prístup</option>
+                    <option value="3">Doručiť na CD</option>
+                  </select>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <a href="../../../../index.html">
-          <button type="submit" class="idsk-button" data-module="idsk-button">
-            Pokračovať
-          </button>
-        </a>
+          <div class="idsk-warning-text idsk-warning-text--info">
+            <div class="govuk-width-container">
+              <div class="idsk-warning-text__text">
+                Normy v elektronickej forme
+              </div>
+            </div>
+          </div>
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header standard">
+                  Názov produktu
+                </th>
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header price">Úhrada</th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <strong><a href="">STN EN ISO 9001</a></strong> <br />
+                  <span>
+                    Systémy manažérstva kvality. Požiadavky (ISO 9001: 2015)
+                  </span>
+                </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell price">45,50 &euro;</td>
+                <td class="govuk-table__cell">
+                  <a href="">
+                    <i class="fas fa-times" title="Odstrániť s košíka"></i>
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <strong><a href="">STN EN ISO 14001</a></strong> <br />
+                  <span>
+                    Systémy manažérstva environmentu. Požiadavky s pokynmi na
+                    použitie (ISO 14001: 2015)
+                  </span>
+                </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell price">37,44 &euro;</td>
+                <td class="govuk-table__cell">
+                  <a href="">
+                    <i class="fas fa-times" title="Odstrániť s košíka"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="idsk-warning-text idsk-warning-text--info">
+            <div class="govuk-width-container">
+              <div class="idsk-warning-text__text">Normy v listinnej forme</div>
+            </div>
+          </div>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header standard">
+                  Názov produktu
+                </th>
+                <th scope="col" class="govuk-table__header quantity">Počet</th>
+                <th scope="col" class="govuk-table__header price">Úhrada</th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <strong><a href="">STN EN ISO 9001</a></strong> <br />
+                  <span>
+                    Systémy manažérstva kvality. Požiadavky (ISO 9001: 2015)
+                  </span>
+                </td>
+                <td class="govuk-table__cell">
+                  <input class="govuk-input" type="text" name="" value="20" />
+                </td>
+                <td class="govuk-table__cell price">700,00 &euro;</td>
+                <td class="govuk-table__cell">
+                  <a href="">
+                    <i class="fas fa-times" title="Odstrániť s košíka"></i>
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <strong><a href="">STN EN ISO 14001</a></strong> <br />
+                  <span>
+                    Systémy manažérstva environmentu. Požiadavky s pokynmi na
+                    použitie (ISO 14001: 2015)
+                  </span>
+                </td>
+                <td class="govuk-table__cell">
+                  <input class="govuk-input" type="text" name="" value="20" />
+                </td>
+                <td class="govuk-table__cell price">576,00 &euro;</td>
+                <td class="govuk-table__cell">
+                  <a href="">
+                    <i class="fas fa-times" title="Odstrániť s košíka"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header standard"></th>
+                <th scope="col" class="govuk-table__header quantity"></th>
+                <th scope="col" class="govuk-table__header price"></th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Poštovné a balné:</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell price">7,00 &euro;</td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row sum">
+                <td class="govuk-table__cell">
+                  <strong>Úhrada celkom:</strong>
+                </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell price">
+                  <strong>1 365,94 &euro;</strong>
+                </td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <a
+                href="../../order_confirmation/index.html"
+                class="govuk-button"
+                data-module="govuk-button"
+              >
+                Pristúpiť k objednávke
+              </a>
+              <a
+                href="../../advanced_standard_search/index.html"
+                class="govuk-button govuk-button--secondary"
+                data-module="govuk-button"
+              >
+                Pokračovať v nákupe
+              </a>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
 
@@ -410,10 +623,7 @@
             <h2 class="govuk-visually-hidden">Items</h2>
             <ul class="idsk-footer__inline-list">
               <li class="idsk-footer__inline-list-item">
-                <a
-                  class="idsk-footer__link"
-                  href="../../../../pages/help/index.html"
-                >
+                <a class="idsk-footer__link" href="../../../help/index.html">
                   Pomoc
                 </a>
               </li>
@@ -422,7 +632,7 @@
                 <a
                   target="_blank"
                   class="idsk-footer__link"
-                  href="../../../../../assets/documents/Technicka_podpora.pdf"
+                  href="../../../../assets/documents/Technicka_podpora.pdf"
                 >
                   Technická podpora
                 </a>
@@ -460,7 +670,7 @@
       </div>
     </footer>
 
-    <script src="../../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
     <script>
       window.GOVUKFrontend.initAll();
     </script>
