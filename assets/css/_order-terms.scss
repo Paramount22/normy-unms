@@ -21,16 +21,17 @@
     }
   }
 
+  .govuk-body-s {
+    text-align: justify;
+  }
+
   .orders {
     border: 1px solid $light-grey;
     padding: 1rem;
   }
   .modal-card {
     background: rgb(248, 244, 244);
-
     width: 960px;
-    max-width: 100%;
-    max-height: 100%;
     margin: 1rem auto;
     padding: 1rem;
   }
@@ -57,6 +58,10 @@
     a {
       margin-right: 1rem;
     }
+  }
+
+  .govuk-body-s {
+    text-align: justify;
   }
 
   .orders {

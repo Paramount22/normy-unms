@@ -2,11 +2,21 @@
   .contact-box {
     border: 1px solid $light-grey;
     padding: 1rem;
+    min-height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   i {
     vertical-align: middle;
     margin-right: 0.2rem;
+  }
+
+  .fa-phone,
+  .fa-mobile-alt {
+    position: relative;
+    bottom: 2px;
   }
 
   .maps {
@@ -41,6 +51,10 @@
 @media screen and (max-width: 40em) {
   #contacts {
     .govuk-grid-column-one-half {
+      margin-bottom: 15px;
+    }
+
+    .contact-box {
       margin-bottom: 15px;
     }
   }

@@ -6,12 +6,16 @@ html {
 }
 
 main {
-  min-height: calc(100vh - 201.267px - 166.933px);
+  min-height: calc(100vh - 201.267px - 191px - 70px);
 }
 
 ul,
 ol {
   list-style: none;
+}
+
+.govuk-template {
+  background-color: white;
 }
 
 ::-moz-selection {
@@ -45,6 +49,17 @@ ol {
 
 #header .idsk-header-extended__mobile .cart {
   padding: 0;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid white;
+  padding: 0.5rem;
+  position: relative;
+  top: 10px;
+}
+
+#header .idsk-header-extended__mobile .cart-item {
+  color: white;
 }
 
 #header .logout {
@@ -59,12 +74,19 @@ ol {
 #header .my-profile-desktop-version {
   font-weight: 600;
   font-size: 1rem;
+  width: 200px;
+}
+
+#header .nav-cart-item {
+  background: white;
 }
 
 #header .cart {
-  background: #003078;
+  border: 2px solid #003078;
+  color: #003078;
   padding: 0.5rem;
-  color: white;
+  -webkit-box-shadow: #bfc1c3 0px 2px 8px 0px;
+          box-shadow: #bfc1c3 0px 2px 8px 0px;
 }
 
 #header .fa-shopping-cart {
@@ -72,7 +94,7 @@ ol {
 }
 
 #header .cart-item {
-  color: white;
+  color: #003078;
   margin-left: 0.2rem;
   /*display: none;*/
 }
@@ -105,6 +127,10 @@ ol {
 
 #header .auth-user-desktop-version a {
   color: #003078;
+}
+
+#header .auth-user-desktop-version .email {
+  max-width: 10rem;
 }
 
 #header .auth-user-desktop-version a:last-child {
@@ -254,6 +280,10 @@ ol {
   color: #003078;
 }
 
+#stn-online .govuk-body {
+  text-align: justify;
+}
+
 #help a {
   color: #003078;
 }
@@ -265,11 +295,28 @@ ol {
 #contacts .contact-box {
   border: 1px solid #dee0e2;
   padding: 1rem;
+  min-height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #contacts i {
   vertical-align: middle;
   margin-right: 0.2rem;
+}
+
+#contacts .fa-phone,
+#contacts .fa-mobile-alt {
+  position: relative;
+  bottom: 2px;
 }
 
 #contacts .maps {
@@ -300,6 +347,9 @@ ol {
 
 @media screen and (max-width: 40em) {
   #contacts .govuk-grid-column-one-half {
+    margin-bottom: 15px;
+  }
+  #contacts .contact-box {
     margin-bottom: 15px;
   }
 }
@@ -465,6 +515,12 @@ ol {
   margin-bottom: 30px;
 }
 
+#my-profile-orders .govuk-table__cell,
+#standards_to_download .govuk-table__cell,
+#standards_online .govuk-table__cell {
+  vertical-align: middle;
+}
+
 #my-profile-orders h3,
 #standards_to_download h3,
 #standards_online h3 {
@@ -571,6 +627,10 @@ ol {
   margin-right: 1rem;
 }
 
+#modal-for-standards-to-download .govuk-body-s {
+  text-align: justify;
+}
+
 #modal-for-standards-to-download .orders {
   border: 1px solid #dee0e2;
   padding: 1rem;
@@ -579,8 +639,6 @@ ol {
 #modal-for-standards-to-download .modal-card {
   background: #f8f4f4;
   width: 960px;
-  max-width: 100%;
-  max-height: 100%;
   margin: 1rem auto;
   padding: 1rem;
 }
@@ -613,6 +671,10 @@ ol {
 
 #modal-for-standards-online .govuk-form-group a {
   margin-right: 1rem;
+}
+
+#modal-for-standards-online .govuk-body-s {
+  text-align: justify;
 }
 
 #modal-for-standards-online .orders {
@@ -1073,6 +1135,50 @@ ol {
   margin-right: 1rem;
 }
 
+#modal-stn-online-license {
+  opacity: 1;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+#modal-stn-online-license .govuk-body-s {
+  text-align: justify;
+}
+
+#modal-stn-online-license a {
+  margin-right: 1rem;
+}
+
+#modal-stn-online-license .license {
+  border: 1px solid #dee0e2;
+  padding: 1rem;
+}
+
+#modal-stn-online-license .modal-card {
+  background: #f8f4f4;
+  overflow: scroll;
+  width: 960px;
+  height: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
 @media screen and (max-width: 62.5em) {
   #modal-for-paper-version .notice,
   #modal-for-electronic-version .notice {
@@ -1241,5 +1347,39 @@ ol {
   #ics-codes ul a {
     font-size: 1rem;
   }
+}
+
+#accessibility-statement a {
+  text-decoration: none;
+}
+
+#accessibility-statement a:hover, #accessibility-statement a:active {
+  text-decoration: underline;
+}
+
+#accessibility-statement .govuk-body {
+  text-align: justify;
+  padding-right: 10px;
+}
+
+#accessibility-statement h3 {
+  color: #003078;
+  padding-right: 10px;
+}
+
+#technical-support a {
+  text-decoration: none;
+}
+
+#technical-support a:hover, #technical-support a:active {
+  text-decoration: underline;
+}
+
+#content-manager a {
+  text-decoration: none;
+}
+
+#content-manager a:hover, #content-manager a:active {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+#accessibility-statement {
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  .govuk-body {
+    text-align: justify;
+    padding-right: 10px;
+  }
+
+  h3 {
+    color: $dark-blue;
+    padding-right: 10px;
+  }
+}

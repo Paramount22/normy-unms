@@ -1,77 +1,68 @@
-'use strict';
+"use strict";
 // modal window for standards to download
+
+//selectors
 const openDownload = document.getElementById(
-  'open-modal-standards-to-download'
+  "open-modal-standards-to-download"
 );
 
 const modalDownload = document.getElementById(
-  'modal-for-standards-to-download'
+  "modal-for-standards-to-download"
 );
 
-const closeDownload = document.getElementById('close-to-download');
+const closeDownload = document.getElementById("close-to-download");
 
 // Listeners
-openDownload.addEventListener('click', (event) => {
+openDownload.addEventListener("click", (event) => {
   event.preventDefault();
-  openModaltoDownload();
+  toggleModalDownload("1", "auto");
 });
 
-closeDownload.addEventListener('click', (event) => {
+closeDownload.addEventListener("click", (event) => {
   event.preventDefault();
-  closeModalToDownload();
+  toggleModalDownload("0", "none");
 });
 
 /* Functions */
 
-// open modal window
-const openModaltoDownload = () => {
-  modalDownload.style.opacity = '1';
-  modalDownload.style.pointerEvents = 'auto';
-};
-
-// closa modal window
-const closeModalToDownload = () => {
-  modalDownload.style.opacity = '0';
-  modalDownload.style.pointerEvents = 'none';
+// open/close modal window
+const toggleModalDownload = (opacity, pointerEvents) => {
+  modalDownload.style.opacity = opacity;
+  modalDownload.style.pointerEvents = pointerEvents;
 };
 
 /** -------------------------------------------- */
 
 // modal window for standards online
 
-const openOnline = document.getElementById('open-modal-standards-online');
-const modalOnline = document.getElementById('modal-for-standards-online');
-const closeOnline = document.getElementById('close-online');
+//selectors
+const openOnline = document.getElementById("open-modal-standards-online");
+const modalOnline = document.getElementById("modal-for-standards-online");
+const closeOnline = document.getElementById("close-online");
 
 // Listeners
-openOnline.addEventListener('click', (event) => {
+openOnline.addEventListener("click", (event) => {
   event.preventDefault();
-  openModalOnline();
+  toggleModalOnline("1", "auto");
 });
 
-closeOnline.addEventListener('click', (event) => {
+closeOnline.addEventListener("click", (event) => {
   event.preventDefault();
-  closeModalOnline();
+  toggleModalOnline("0", "none");
 });
 
 /* Functions */
 
-// open modal window
-const openModalOnline = () => {
-  modalOnline.style.opacity = '1';
-  modalOnline.style.pointerEvents = 'auto';
-};
-
-// closa modal window
-const closeModalOnline = () => {
-  modalOnline.style.opacity = '0';
-  modalOnline.style.pointerEvents = 'none';
+// open/close modal window
+const toggleModalOnline = (opacity, pointerEvents) => {
+  modalOnline.style.opacity = opacity;
+  modalOnline.style.pointerEvents = pointerEvents;
 };
 
 // clocse both modal windows when press Escape
-document.body.addEventListener('keydown', (event) => {
-  if (event.key == 'Escape') {
-    closeModalToDownload();
-    closeModalOnline();
+document.body.addEventListener("keydown", (event) => {
+  if (event.key == "Escape") {
+    toggleModalDownload("0", "none");
+    toggleModalOnline("0", "none");
   }
 });

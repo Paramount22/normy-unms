@@ -1,43 +1,56 @@
-'use strict';
+"use strict";
 
 /* Notice for paper version */
 
-const orderPaper = document.querySelector('.order-paper-version');
+// selectors
+const orderPaper = document.querySelector(".order-paper-version");
 const noticeForPaperVersion = document.getElementById(
-  'modal-for-paper-version'
+  "modal-for-paper-version"
 );
-const closeNoticePaper = document.getElementById('close-notice-paper');
+const closeNoticePaper = document.getElementById("close-notice-paper");
 
-orderPaper.addEventListener('click', (event) => {
-  noticeForPaperVersion.style.opacity = '1';
-  noticeForPaperVersion.style.pointerEvents = 'auto';
+// Listeners
+orderPaper.addEventListener("click", (event) => {
+  toggleModalPaper("1", "auto");
   event.preventDefault();
 });
 
-closeNoticePaper.addEventListener('click', (event) => {
-  noticeForPaperVersion.style.opacity = '0';
-  noticeForPaperVersion.style.pointerEvents = 'none';
+closeNoticePaper.addEventListener("click", (event) => {
+  toggleModalPaper("0", "none");
   event.preventDefault();
 });
+
+// Function
+const toggleModalPaper = (opacity, pointerEvents) => {
+  noticeForPaperVersion.style.opacity = opacity;
+  noticeForPaperVersion.style.pointerEvents = pointerEvents;
+};
 
 /*  Notice for electronic version */
 
-const orderElectronic = document.querySelector('.order-electronic-version');
+// selectors
+const orderElectronic = document.querySelector(".order-electronic-version");
 const noticeForElectronicVersion = document.getElementById(
-  'modal-for-electronic-version'
+  "modal-for-electronic-version"
 );
 const closeNoticeElectronic = document.getElementById(
-  'close-notice-electronic'
+  "close-notice-electronic"
 );
 
-orderElectronic.addEventListener('click', (event) => {
-  noticeForElectronicVersion.style.opacity = '1';
-  noticeForElectronicVersion.style.pointerEvents = 'auto';
+// Listeners
+orderElectronic.addEventListener("click", (event) => {
+  toggleModalElectronic("1", "auto");
+
   event.preventDefault();
 });
 
-closeNoticeElectronic.addEventListener('click', (event) => {
-  noticeForElectronicVersion.style.opacity = '0';
-  noticeForElectronicVersion.style.pointerEvents = 'none';
+closeNoticeElectronic.addEventListener("click", (event) => {
+  toggleModalElectronic("0", "none");
   event.preventDefault();
 });
+
+// Function
+const toggleModalElectronic = (opacity, pointerEvents) => {
+  noticeForElectronicVersion.style.opacity = opacity;
+  noticeForElectronicVersion.style.pointerEvents = pointerEvents;
+};

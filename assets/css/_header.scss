@@ -20,6 +20,16 @@
   .idsk-header-extended__mobile {
     .cart {
       padding: 0;
+      color: white;
+      box-shadow: none;
+      border: 2px solid white;
+      padding: 0.5rem;
+      position: relative;
+      top: 10px;
+    }
+
+    .cart-item {
+      color: white;
     }
   }
 
@@ -35,12 +45,19 @@
   .my-profile-desktop-version {
     font-weight: 600;
     font-size: 1rem;
+    width: 200px;
+  }
+
+  .nav-cart-item {
+    background: white;
   }
 
   .cart {
-    background: $dark-blue;
+    border: 2px solid $dark-blue;
+    color: $dark-blue;
     padding: 0.5rem;
-    color: white;
+    //box-shadow: $mid-grey 2px -4px 5px;
+    box-shadow: $mid-grey 0px 2px 8px 0px;
   }
 
   .fa-shopping-cart {
@@ -48,7 +65,7 @@
   }
 
   .cart-item {
-    color: white;
+    color: $dark-blue;
     margin-left: 0.2rem;
     /*display: none;*/
   }
@@ -70,9 +87,14 @@
     padding-left: 0;
     font-size: 0.9rem;
     margin: 0;
+
     color: $dark-blue;
     a {
       color: $dark-blue;
+    }
+
+    .email {
+      max-width: 10rem;
     }
 
     a:last-child {

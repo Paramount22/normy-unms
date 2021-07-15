@@ -41,6 +41,44 @@
   }
 }
 
+#modal-stn-online-license {
+  opacity: 1;
+  pointer-events: auto;
+  background: rgba($color: #000000, $alpha: 0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 0.3s all ease;
+
+  .govuk-body-s {
+    text-align: justify;
+  }
+
+  a {
+    margin-right: 1rem;
+  }
+
+  .license {
+    border: 1px solid $light-grey;
+    padding: 1rem;
+  }
+  .modal-card {
+    background: rgb(248, 244, 244);
+    overflow: scroll;
+    width: 960px;
+    height: 80%;
+
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
+
 @media screen and (max-width: 62.5em) {
   #modal-for-paper-version,
   #modal-for-electronic-version {

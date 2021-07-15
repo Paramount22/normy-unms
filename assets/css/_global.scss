@@ -15,12 +15,16 @@ html {
 }
 
 main {
-  min-height: calc(100vh - 201.267px - 166.933px);
+  min-height: calc(100vh - 201.267px - 191px - 70px);
 }
 
 ul,
 ol {
   list-style: none;
+}
+
+.govuk-template {
+  background-color: white;
 }
 
 ::-moz-selection {

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="sk" class="govuk-template app-no-canvas-background">
+  <head>
+    <meta charset="utf-8" />
+    <title>Normy UNMS - Dotazník spokojnosti</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--[if !IE 8]><!-->
+    <link
+      rel="stylesheet"
+      href="../../assets/css/idsk-frontend-2.6.0.min.css"
+    />
+    <!--<![endif]-->
+    <!--[if IE 8]>
+      <link
+        rel="stylesheet"
+        href="../../assets/css/idsk-frontend-ie8-2.6.0.min.css"
+      />
+    <![endif]-->
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body class="govuk-template__body js-enabled">
+    <div class="govuk-width-container">
+      <main
+        class="govuk-main-wrapper govuk-main-wrapper--auto-spacing"
+        id="main-content"
+        role="main"
+      >
+        <div class="app-whitespace-highlight">
+          <div
+            data-module="idsk-customer-surveys"
+            class="idsk-customer-surveys"
+          >
+            <div class="govuk-width-container">
+              <div class="idsk-customer-surveys__logo">
+                <img
+                  src="../../assets/images/logo/UNMS_header.png"
+                  width="260"
+                  alt="UNMS SR"
+                />
+              </div>
+              <div id="idsk-customer-surveys__content">
+                <div
+                  class="
+                    idsk-customer-surveys__step idsk-customer-surveys--show
+                  "
+                >
+                  <p class="govuk-body-l">
+                    Cieľom tohto dotazníka je zistiť potreby a postrehy
+                    používateľov webu Úrade pre normalizáciu, metrológiu a
+                    skúšobníctvo Slovenskej republiky (Ďalej len "ÚNMS SR").
+                  </p>
+                  <p class="govuk-body-l">
+                    Ďakujeme za súhlas s účasťou v tomto prieskume, pomáhate nám
+                    zlepšovať tento web. Vyplnenie tohto dotazníka Vám zaberie
+                    <strong>len 3 minúty.</strong>
+                  </p>
+                  <p class="govuk-body-l">
+                    Odpovede na všetky otázky sú dobrovoľné. Vaše odpovede na
+                    tento prieskum sú anonymné.
+                  </p>
+                </div>
+
+                <div
+                  class="
+                    idsk-customer-surveys--hidden idsk-customer-surveys__step
+                  "
+                >
+                  <div>
+                    <p class="idsk-customer-survey--line"></p>
+                    <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                      Navštevujete web normy.unms.sk z pracovných alebo
+                      súkromných dôvodov?
+                    </h3>
+
+                    <div
+                      data-module="idsk-customer-surveys-radios"
+                      class="idsk-customer-surveys-radios"
+                    >
+                      <div class="govuk-radios" data-id="">
+                        <div
+                          class="
+                            govuk-radios__item
+                            idsk-customer-survey__radio--work
+                          "
+                        >
+                          <input
+                            class="govuk-radios__input"
+                            id="1"
+                            name="1"
+                            type="radio"
+                            value="1"
+                          />
+                          <label
+                            class="govuk-label govuk-radios__label"
+                            for="1"
+                          >
+                            z pracovných dôvodov
+                          </label>
+                        </div>
+                        <div
+                          class="
+                            govuk-radios__item
+                            idsk-customer-survey__radio--private
+                          "
+                        >
+                          <input
+                            class="govuk-radios__input"
+                            id="2"
+                            name="1"
+                            type="radio"
+                            value="2"
+                          />
+                          <label
+                            class="govuk-label govuk-radios__label"
+                            for="2"
+                          >
+                            zo súkromných dôvodov
+                          </label>
+                        </div>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      idsk-customer-survey__text-area--work
+                      idsk-customer-surveys--hidden
+                    "
+                  >
+                    <p class="idsk-customer-survey--line"></p>
+                    <h3
+                      class="
+                        govuk-heading-m
+                        idsk-customer-survey__subtitle--work
+                      "
+                    >
+                      Čo je vašou pracovnou náplňou?
+                    </h3>
+                    <div data-module="idsk-customer-surveys-text-area">
+                      <div
+                        id="idsk-feedback__content"
+                        class="idsk-customer-surveys-text-area"
+                        data-lines="Zostáva Vám 200 znakov"
+                      >
+                        <div id="first">
+                          <br />
+
+                          <div
+                            class="idsk-character-count"
+                            data-module="idsk-character-count"
+                            data-maxlength="200"
+                          >
+                            <div class="govuk-form-group">
+                              <span id="first-hint" class="govuk-hint"> </span>
+                              <textarea
+                                class="govuk-textarea govuk-js-character-count"
+                                id="first"
+                                name="first"
+                                rows="5"
+                                aria-describedby="first-info first-hint"
+                              ></textarea>
+                            </div>
+
+                            <span
+                              id="first-info"
+                              class="govuk-hint govuk-character-count__message"
+                              aria-live="polite"
+                            >
+                              You can enter up to 200 characters
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    idsk-customer-surveys--hidden idsk-customer-surveys__step
+                  "
+                >
+                  <p class="idsk-customer-survey--line"></p>
+                  <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                    Popíšte, prečo ste dnes prišli na stránku
+                    https://normy.unms.sk
+                  </h3>
+                  <p class="govuk-caption-m idsk-customer-survey__caption">
+                    Prosím neuvádzajte osobné ani finančné informácie, ako napr.
+                    svoje rodné číslo alebo údaje o kreditnej karte.
+                  </p>
+                  <div data-module="idsk-customer-surveys-text-area">
+                    <div
+                      id="idsk-feedback__content"
+                      class="idsk-customer-surveys-text-area"
+                      data-lines="Zostáva Vám 200 znakov"
+                    >
+                      <div id="second">
+                        <br />
+
+                        <div
+                          class="idsk-character-count"
+                          data-module="idsk-character-count"
+                          data-maxlength="200"
+                        >
+                          <div class="govuk-form-group">
+                            <span id="second-hint" class="govuk-hint"> </span>
+                            <textarea
+                              class="govuk-textarea govuk-js-character-count"
+                              id="second"
+                              name="second"
+                              rows="5"
+                              aria-describedby="second-info second-hint"
+                            ></textarea>
+                          </div>
+
+                          <span
+                            id="second-info"
+                            class="govuk-hint govuk-character-count__message"
+                            aria-live="polite"
+                          >
+                            You can enter up to 200 characters
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="idsk-customer-survey--line"></p>
+                  <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                    Našli ste, čo ste hľadali?
+                  </h3>
+                  <div
+                    data-module="idsk-customer-surveys-radios"
+                    class="idsk-customer-surveys-radios"
+                  >
+                    <div class="govuk-radios" data-id="">
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="3"
+                          name="2"
+                          type="radio"
+                          value="3"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="3">
+                          Áno
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="4"
+                          name="2"
+                          type="radio"
+                          value="4"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="4">
+                          Nie
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="5"
+                          name="2"
+                          type="radio"
+                          value="5"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="5">
+                          Neviem / Zatiaľ nie
+                        </label>
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    idsk-customer-surveys--hidden idsk-customer-surveys__step
+                  "
+                >
+                  <p class="idsk-customer-survey--line"></p>
+                  <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                    Ako by ste zhodnotil/a Vášu skúsenosť s návštevou stránky
+                    https://normy.unms.sk?
+                  </h3>
+                  <div
+                    data-module="idsk-customer-surveys-radios"
+                    class="idsk-customer-surveys-radios"
+                  >
+                    <div class="govuk-radios" data-id="">
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="6"
+                          name="3"
+                          type="radio"
+                          value="6"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="6">
+                          Veľmi nespokojný
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="7"
+                          name="3"
+                          type="radio"
+                          value="7"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="7">
+                          Nespokojný
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="8"
+                          name="3"
+                          type="radio"
+                          value="8"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="8">
+                          Ani spokojný ani nepsokojný
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="9"
+                          name="3"
+                          type="radio"
+                          value="9"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="9">
+                          Spokojný
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="10"
+                          name="3"
+                          type="radio"
+                          value="10"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="10">
+                          Veľmi spokojný
+                        </label>
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    idsk-customer-surveys--hidden idsk-customer-surveys__step
+                  "
+                >
+                  <p class="idsk-customer-survey--line"></p>
+                  <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                    Hľadali ste už niekde inde to, čo potrebujete, ešte pred
+                    tým, ako ste sem prišli?
+                  </h3>
+                  <div
+                    data-module="idsk-customer-surveys-radios"
+                    class="idsk-customer-surveys-radios"
+                  >
+                    <div class="govuk-radios" data-id="">
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="11"
+                          name="4"
+                          type="radio"
+                          value="11"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="11">
+                          Áno
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input
+                          class="govuk-radios__input"
+                          id="12"
+                          name="4"
+                          type="radio"
+                          value="12"
+                        />
+                        <label class="govuk-label govuk-radios__label" for="12">
+                          Nie
+                        </label>
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                  <p class="idsk-customer-survey--line"></p>
+                  <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                    Kde ste hľadali?
+                  </h3>
+
+                  <div data-module="idsk-customer-surveys-text-area">
+                    <div
+                      id="idsk-feedback__content"
+                      class="idsk-customer-surveys-text-area"
+                      data-lines="Zostáva Vám 200 znakov"
+                    >
+                      <div id="third">
+                        <br />
+
+                        <div
+                          class="idsk-character-count"
+                          data-module="idsk-character-count"
+                          data-maxlength="200"
+                        >
+                          <div class="govuk-form-group">
+                            <span id="third-hint" class="govuk-hint"> </span>
+                            <textarea
+                              class="govuk-textarea govuk-js-character-count"
+                              id="third"
+                              name="third"
+                              rows="5"
+                              aria-describedby="third-info third-hint"
+                            ></textarea>
+                          </div>
+
+                          <span
+                            id="third-info"
+                            class="govuk-hint govuk-character-count__message"
+                            aria-live="polite"
+                          >
+                            You can enter up to 200 characters
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    idsk-customer-surveys--hidden idsk-customer-surveys__step
+                  "
+                >
+                  <p class="idsk-customer-survey--line"></p>
+                  <h3 class="govuk-heading-m idsk-customer-surveys--subtitle">
+                    Ak by ste nám chceli niečo odkázať, prosím, napíšte nám to
+                    sem.
+                  </h3>
+                  <p class="govuk-caption-m idsk-customer-survey__caption">
+                    Prosím neuvádzajte osobné ani finančné informácie, ako napr.
+                    svoje rodné číslo alebo údaje o kreditnej karte.
+                  </p>
+                  <div data-module="idsk-customer-surveys-text-area">
+                    <div
+                      id="idsk-feedback__content"
+                      class="idsk-customer-surveys-text-area"
+                      data-lines="Zostáva Vám 200 znakov"
+                    >
+                      <div id="fourth">
+                        <br />
+
+                        <div
+                          class="idsk-character-count"
+                          data-module="idsk-character-count"
+                          data-maxlength="200"
+                        >
+                          <div class="govuk-form-group">
+                            <span id="fourth-hint" class="govuk-hint"> </span>
+                            <textarea
+                              class="govuk-textarea govuk-js-character-count"
+                              id="fourth"
+                              name="fourth"
+                              rows="5"
+                              aria-describedby="fourth-info fourth-hint"
+                            ></textarea>
+                          </div>
+
+                          <span
+                            id="fourth-info"
+                            class="govuk-hint govuk-character-count__message"
+                            aria-live="polite"
+                          >
+                            You can enter up to 200 characters
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="idsk-feedback__thanks"
+                  class="
+                    idsk-customer-surveys--hidden idsk-customer-surveys__step
+                  "
+                >
+                  <p class="idsk-customer-survey--line"></p>
+                  <h2 class="govuk-heading-l">Ďakujeme za spätnú väzbu.</h2>
+                  <p class="govuk-body">
+                    Späť na stránku
+                    <a href="../../index.html"> normy.unms.sk </a>
+                  </p>
+                </div>
+
+                <div class="idsk-customer-surveys__buttons">
+                  <button
+                    id="idsk-customer-surveys__previous-button"
+                    class="govuk-button govuk-button--secondary"
+                    data-line1="Odísť"
+                    data-line2="Späť"
+                    onclick="location.href='/';"
+                  >
+                    Odísť
+                  </button>
+                  <button
+                    id="idsk-customer-surveys__send-button"
+                    class="idsk-button idsk-button--start"
+                  >
+                    <span
+                      class="idsk-customer-surveys__send-button"
+                      data-line1="Začať"
+                      data-line2="Ďalej"
+                      data-line3="Odoslať odpovede"
+                      >Začať</span
+                    >
+                    <span class="idsk-button__start-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17.5"
+                        height="19"
+                        viewbox="0 0 33 40"
+                        role="presentation"
+                        focusable="false"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M0 0h13l20 20-20 20H0l20-20z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="idsk-feedback__thanks" class="idsk-feedback--hidden">
+              <h2 class="govuk-heading-l">Ďakujeme za spätnú väzbu.</h2>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+    </script>
+  </body>
+</html>
