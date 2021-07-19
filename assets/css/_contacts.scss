@@ -13,6 +13,15 @@
     margin-right: 0.2rem;
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
   .fa-phone,
   .fa-mobile-alt {
     position: relative;

@@ -8,7 +8,7 @@
     <!--[if !IE 8]><!-->
     <link
       rel="stylesheet"
-      href="../../../assets/css/idsk-frontend-2.6.0.min.css"
+      href="../../../../assets/css/idsk-frontend-2.6.0.min.css"
     />
     <!--<![endif]-->
     <!--[if IE 8]>
@@ -28,7 +28,7 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../../../assets/css/style.css" />
     <title>Normy UNMS - Detail objednávky</title>
   </head>
   <body class="govuk-template__body js-enabled">
@@ -47,7 +47,7 @@
           <a href="/" title="UNMS SR">
             <div class="idsk-header-extended__logotype-crown">
               <img
-                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                src="../../../../assets/images/logo/UNMS_header.png"
                 alt="UNMS SR"
               />
             </div>
@@ -86,7 +86,7 @@
           <button type="button" class="idsk-header-extended__language-button">
             <span class="idsk-header-extended__language--current-text">
               <img
-                src="../../../assets/images/flags/slovakia-flag-icon-16.png"
+                src="../../../../assets/images/flags/slovakia-flag-icon-16.png"
                 alt="slovenčina"
                 aria-hidden="true"
               />
@@ -102,7 +102,7 @@
                 href="#"
               >
                 <img
-                  src="../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
+                  src="../../../../assets/images/flags/united-states-of-america-flag-icon-16.png"
                   alt="english"
                   aria-hidden="true"
                 />
@@ -184,7 +184,7 @@
               <li class="idsk-header-extended__navigation-item">
                 <a
                   class="idsk-header-extended__link"
-                  href="../../index.html"
+                  href="../../../../index.html"
                   title="Portál noriem"
                 >
                   Portál noriem
@@ -343,20 +343,16 @@
       <div class="govuk-breadcrumbs">
         <ol class="govuk-breadcrumbs__list">
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../index.html"
+            <a class="govuk-breadcrumbs__link" href="../../index.html"
               >Môj profil</a
             >
           </li>
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../my_orders/index.html"
+            <a class="govuk-breadcrumbs__link" href="../../my_orders/index.html"
               >Prehľad historických objednávok</a
             >
           </li>
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="../my_orders/index.html"
-              >Detail objednávky</a
-            >
-          </li>
+          <li class="govuk-breadcrumbs__list-item">Detail objednávky</li>
         </ol>
       </div>
 
@@ -375,7 +371,7 @@
                   govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-2
                 "
               >
-                Objednávka
+                Detail objednávky
               </h2>
               <span class="print govuk-!-margin-bottom-4">
                 <a class="idsk-footer__link" href="javascript:window.print()">
@@ -520,6 +516,15 @@ Pokus</textarea
           <p class="govuk-body">
             S možnosťou tlače, prenosu textu a obrázkov pre 1 PC <br />
             Stiahnuť( download )
+
+            <span>
+              <a
+                target="_blank"
+                href="../../../../assets/documents/Vysvetlivky.pdf"
+              >
+                <i class="fas fa-question-circle" title="Vysvetlivky"></i>
+              </a>
+            </span>
           </p>
 
           <table class="govuk-table">
@@ -528,21 +533,28 @@ Pokus</textarea
                 <th scope="col" class="govuk-table__header">
                   Katalógové číslo
                 </th>
-                <th scope="col" class="govuk-table__header">
-                  Označenie produktu
-                </th>
-                <th scope="col" class="govuk-table__header">Množstvo ks</th>
+                <th scope="col" class="govuk-table__header">Norma</th>
+                <th scope="col" class="govuk-table__header">Rok vydania</th>
+                <th scope="col" class="govuk-table__header">Jazyk</th>
                 <th scope="col" class="govuk-table__header">
                   Úhrada &#128;/ks
                 </th>
-                <th scope="col" class="govuk-table__header">Úhrada spolu</th>
+                <th scope="col" class="govuk-table__header">Úhrada celkom</th>
               </tr>
             </thead>
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <td class="govuk-table__cell">122449</td>
                 <td class="govuk-table__cell">STN EN ISO 9001</td>
-                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">1.2.2016</td>
+                <td class="govuk-table__cell">
+                  <img
+                    src="../../../../assets/images/flags/slovakia.png"
+                    alt="Slovenský jazyk"
+                    width="30"
+                  />
+                </td>
+
                 <td class="govuk-table__cell">45,50 &#128;</td>
                 <td class="govuk-table__cell">45,50 &#128;</td>
               </tr>
@@ -563,9 +575,6 @@ Pokus</textarea
             <strong>Spôsob úhrady:</strong> Zálohová faktúra
           </p>
 
-          <p class="govuk-body-m">
-            <strong>Spôsob dopravy:</strong> 0,00 &#128;
-          </p>
           <p class="govuk-body-l">
             <strong>Úhrada celkom:</strong> 45,50 &#128;
           </p>
@@ -579,9 +588,9 @@ Pokus</textarea
           <div class="idsk-footer__meta-item">
             <a href="https://www.unms.sk/" target="_blank">
               <img
-                src="https://www.unms.sk/swift_data/source/images/logoUNMS.jpg"
+                src="../../../../assets/images/logo/UNMS_footer.png"
+                width="210"
                 alt="UNMS SR"
-                width="220"
               />
             </a>
           </div>
@@ -600,16 +609,44 @@ Pokus</textarea
 
               <li class="idsk-footer__inline-list-item">
                 <a
-                  target="_blank"
                   class="idsk-footer__link"
-                  href="./assets/documents/Technicka_podpora.pdf"
+                  href="./pages/technical_support/index.html"
                 >
                   Technická podpora
                 </a>
               </li>
+
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  target="_blank"
+                  class="idsk-footer__link"
+                  href="https://www.slov-lex.sk/static/pdf/2019/76/ZZ_2019_76_20190401.pdf"
+                >
+                  Vyhláška č. 76/2019
+                </a>
+              </li>
+
               <li class="idsk-footer__inline-list-item">
                 <a class="idsk-footer__link" href="./pages/contacts/index.html">
                   Kontakty
+                </a>
+              </li>
+
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  class="idsk-footer__link"
+                  href="./pages/accessibility_statement/index.html"
+                >
+                  Vyhlásenie o prístupnosti
+                </a>
+              </li>
+
+              <li class="idsk-footer__inline-list-item">
+                <a
+                  class="idsk-footer__link"
+                  href="./pages/content-manager/index.html"
+                >
+                  Správca obsahu
                 </a>
               </li>
             </ul>
@@ -618,7 +655,7 @@ Pokus</textarea
       </div>
     </footer>
 
-    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script src="../../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
     <script>
       window.GOVUKFrontend.initAll();
     </script>

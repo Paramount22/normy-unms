@@ -313,6 +313,14 @@ ol {
   margin-right: 0.2rem;
 }
 
+#contacts a {
+  text-decoration: none;
+}
+
+#contacts a:hover, #contacts a:active {
+  text-decoration: underline;
+}
+
 #contacts .fa-phone,
 #contacts .fa-mobile-alt {
   position: relative;
@@ -507,6 +515,14 @@ ol {
   margin-bottom: 30px;
 }
 
+#my-profile-orders .orders a {
+  text-decoration: none;
+}
+
+#my-profile-orders .orders a:hover, #my-profile-orders .orders a:active {
+  text-decoration: underline;
+}
+
 #my-profile-orders .orders,
 #standards_to_download .orders,
 #standards_online .orders {
@@ -564,6 +580,10 @@ ol {
   border: 1px solid #dee0e2;
   padding: 1rem;
   margin-bottom: 30px;
+}
+
+#order-deteil .orders a {
+  color: #0b0c0c;
 }
 
 #order-deteil .orders h3 {
@@ -1232,6 +1252,7 @@ ol {
 #shopping-cart .fa-times {
   color: #d0190f;
   font-size: 1.7rem;
+  text-shadow: 1px 2px 2px #bfc1c3;
 }
 
 #shopping-cart .fa-question-circle {

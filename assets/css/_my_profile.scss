@@ -32,6 +32,15 @@
 #my-profile-orders {
   .orders {
     margin-bottom: 30px;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -74,6 +83,10 @@
     border: 1px solid $light-grey;
     padding: 1rem;
     margin-bottom: 30px;
+
+    a {
+      color: $black;
+    }
 
     h3 {
       border-bottom: 1px solid $light-grey;
