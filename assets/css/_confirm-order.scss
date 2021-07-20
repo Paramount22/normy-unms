@@ -5,6 +5,10 @@
     align-items: center;
   }
 
+  img {
+    width: 120px;
+  }
+
   .orders {
     border: 1px solid $light-grey;
     padding: 1rem;
@@ -36,11 +40,32 @@
   }
 }
 
+.successful-ordered {
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
 @media screen and (max-width: 40em) {
   #confirm-order {
+    img {
+      width: 80px;
+    }
+
     .orders {
       .govuk-grid-column-one-half {
         padding-top: 15px;
+      }
+
+      .govuk-grid-column-one-quarter {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
       }
     }
   }

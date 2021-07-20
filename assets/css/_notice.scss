@@ -18,15 +18,21 @@
     width: 30%;
     background: rgb(248, 244, 244);
     padding: 1rem;
-
     h3 {
-      border-bottom: 1px solid $light-grey;
-      padding-bottom: 1rem;
       color: $red;
     }
 
+    .modal-title {
+      border-bottom: 1px solid $light-grey;
+      padding-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .govuk-body {
-      margin-bottom: 10px;
+      margin-top: 1rem;
+      font-size: 1.3rem;
     }
 
     .govuk-form-group {
