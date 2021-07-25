@@ -68,6 +68,22 @@
   .govuk-button--secondary {
     color: $black;
   }
+
+  .description-of-delivery-option {
+    margin-top: 1rem;
+    font-style: italic;
+    p {
+      color: $green;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 40em) {

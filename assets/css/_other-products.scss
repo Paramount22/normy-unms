@@ -9,6 +9,14 @@
       padding-bottom: 1rem;
     }
 
+    a {
+      text-decoration: none;
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+
     .govuk-body-s {
       font-style: italic;
     }

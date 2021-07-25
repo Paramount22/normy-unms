@@ -11,6 +11,11 @@
     box-shadow: 0px 3px 8px $mid-grey;
   }
 
+  strong {
+    position: relative;
+    top: 6px;
+  }
+
   p {
     border: 1px solid #bfc1c3;
     padding: 1rem;

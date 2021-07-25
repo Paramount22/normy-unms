@@ -442,13 +442,36 @@
 
                   <select
                     class="govuk-select"
-                    id="standards-license"
-                    name="standards-license"
+                    id="standards-delivery"
+                    name="standards-delivery"
                   >
                     <option value="1">Stiahnuť (download)</option>
                     <option value="2">Online prístup</option>
                     <option value="3" selected="selected">Doručiť na CD</option>
                   </select>
+
+                  <div class="description-of-delivery-option">
+                    <p class="govuk-body-s delivery-cd">
+                      <strong
+                        >Norma Vám bude doručená na CD. Účtuje sa poštovné a
+                        balné 3,40 EUR + 0,60 EUR za CD médium.
+                      </strong>
+                    </p>
+                    <p class="govuk-body-s delivery-download">
+                      <strong
+                        >Norma bude po dobu 30 dní k dispozícii na stiahnutie v
+                        sekcii Môj profil/Objednané elektronické normy na
+                        stiahnutie.</strong
+                      >
+                    </p>
+                    <p class="govuk-body-s delivery-online">
+                      <strong
+                        >Norma bude neobmedzene k dispozícii na stiahnutie
+                        online v sekcii Môj profil/Objednané elektronické normy
+                        online</strong
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -486,6 +509,12 @@
                     src="../../../../assets/images/flags/slovakia.png"
                     width="30"
                     alt="Slovenský jazyk"
+                  />
+
+                  <img
+                    src="../../../../assets/images/flags/united-kingdom.png"
+                    width="30"
+                    alt="Anglický jazyk"
                   />
                 </td>
                 <td class="govuk-table__cell price">45,50 &euro;</td>
@@ -635,9 +664,10 @@
       </div>
     </footer>
 
-    <script src="../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
+    <script src="../../../../assets/js/idsk-frontend-2.6.0.min.js"></script>
     <script>
       window.GOVUKFrontend.initAll();
     </script>
+    <script src="../../../../assets/js/cart.js"></script>
   </body>
 </html>

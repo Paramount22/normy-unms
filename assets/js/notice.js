@@ -54,3 +54,11 @@ const toggleModalElectronic = (opacity, pointerEvents) => {
   noticeForElectronicVersion.style.opacity = opacity;
   noticeForElectronicVersion.style.pointerEvents = pointerEvents;
 };
+
+// clocse modal window when press Escape
+document.body.addEventListener("keydown", (event) => {
+  if (event.key == "Escape") {
+    toggleModalElectronic("0", "none");
+    toggleModalPaper("0", "none");
+  }
+});

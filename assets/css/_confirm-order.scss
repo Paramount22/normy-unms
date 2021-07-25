@@ -49,6 +49,13 @@
       text-decoration: underline;
     }
   }
+
+  .idsk-button {
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (max-width: 40em) {
