@@ -7,38 +7,57 @@ const cd = document.querySelector('.delivery-cd');
 const select = document.querySelector('#standards-delivery');
 
 window.addEventListener('DOMContentLoaded', () => {
-  download.style.display = 'none';
-  online.style.display = 'none';
-  cd.style.display = 'block';
+  // functions
 
-  // function
+  const switchToCD = (none, block) => {
+    download.style.display = none;
+    online.style.display = none;
+    cd.style.display = block;
+  };
+
+  const switchToOnline = (none, block) => {
+    download.style.display = none;
+    online.style.display = block;
+    cd.style.display = none;
+  };
+
+  const switchToDownload = (none, block) => {
+    download.style.display = block;
+    online.style.display = none;
+    cd.style.display = none;
+  };
+
+  switchToCD('none', 'block');
+
   const update = () => {
     const option = select.options[select.selectedIndex].value;
 
     if (option == 3) {
-      download.style.display = 'none';
-      online.style.display = 'none';
-      cd.style.display = 'block';
+      switchToCD('none', 'block');
     }
     if (option == 1) {
-      online.style.display = 'none';
-      cd.style.display = 'none';
-      download.style.display = 'block';
+      switchToDownload('none', 'block');
     }
     if (option == 2) {
-      online.style.display = 'block';
-      cd.style.display = 'none';
-      download.style.display = 'none';
+      switchToOnline('none', 'block');
     }
   };
 
   if (location.reload) {
     select.options[select.selectedIndex].value = 3;
-    download.style.display = 'none';
-    online.style.display = 'none';
-    cd.style.display = 'block';
+    switchToCD('none', 'block');
   }
 
   // listeners
   select.addEventListener('change', update);
 });
+
+/*let remove = document.querySelectorAll('a');
+console.log(remove);
+remove = Array.from(remove);
+
+remove.forEach((item) =>
+  item.addEventListener('click', (index) => {
+    console.log(index, ' OK');
+  })
+);*/
