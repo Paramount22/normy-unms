@@ -51,13 +51,3 @@ window.addEventListener('DOMContentLoaded', () => {
   // listeners
   select.addEventListener('change', update);
 });
-
-/*let remove = document.querySelectorAll('a');
-console.log(remove);
-remove = Array.from(remove);
-
-remove.forEach((item) =>
-  item.addEventListener('click', (index) => {
-    console.log(index, ' OK');
-  })
-);*/
