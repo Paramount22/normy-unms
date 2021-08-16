@@ -1,9 +1,26 @@
 #found-records {
+  .records-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .found-record-container {
     border: 1px solid $dark-grey;
     padding: 1rem;
     margin-bottom: 30px;
     background: $light-grey;
+    box-shadow: $dark-grey 2px 4px 8px;
+    transform: translateX(400%);
+    transition: transform 0.8s ease;
+
+    &:nth-last-of-type(even) {
+      transform: translateX(-400%);
+    }
+
+    &.show-record {
+      transform: translateX(0);
+    }
 
     .govuk-body {
       margin-bottom: 20px;

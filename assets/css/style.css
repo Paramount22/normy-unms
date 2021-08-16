@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap");
 body,
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 main {
@@ -918,11 +922,41 @@ ol {
   }
 }
 
+#found-records .records-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #found-records .found-record-container {
   border: 1px solid #626a6e;
   padding: 1rem;
   margin-bottom: 30px;
   background: #dee0e2;
+  -webkit-box-shadow: #626a6e 2px 4px 8px;
+          box-shadow: #626a6e 2px 4px 8px;
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+#found-records .found-record-container:nth-last-of-type(even) {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+#found-records .found-record-container.show-record {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 #found-records .found-record-container .govuk-body {

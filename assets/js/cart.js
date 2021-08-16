@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
 // selectors
-const download = document.querySelector('.delivery-download');
-const online = document.querySelector('.delivery-online');
-const cd = document.querySelector('.delivery-cd');
-const select = document.querySelector('#standards-delivery');
+const download = document.querySelector(".delivery-download");
+const online = document.querySelector(".delivery-online");
+const cd = document.querySelector(".delivery-cd");
+const select = document.querySelector("#standards-delivery");
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   // functions
 
   const switchToCD = (none, block) => {
@@ -27,27 +27,28 @@ window.addEventListener('DOMContentLoaded', () => {
     cd.style.display = none;
   };
 
-  switchToCD('none', 'block');
+  switchToCD("none", "block");
 
   const update = () => {
     const option = select.options[select.selectedIndex].value;
 
     if (option == 3) {
-      switchToCD('none', 'block');
+      switchToCD("none", "block");
     }
     if (option == 1) {
-      switchToDownload('none', 'block');
+      switchToDownload("none", "block");
     }
     if (option == 2) {
-      switchToOnline('none', 'block');
+      switchToOnline("none", "block");
     }
   };
 
   if (location.reload) {
     select.options[select.selectedIndex].value = 3;
-    switchToCD('none', 'block');
+    switchToCD("none", "block");
   }
 
   // listeners
-  select.addEventListener('change', update);
+  select.addEventListener("change", update);
 });
+
